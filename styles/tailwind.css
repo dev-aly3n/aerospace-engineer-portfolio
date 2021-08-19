@@ -1,0 +1,9 @@
+@import '../pages/_pages.css';
+@import '../components/_components.css';
+
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;

@@ -1,16 +1,15 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
-const HomePage = () => {
+const Home = () => {
   return (
-    <div className="flex flex-col justify-center items-center pt-10">
+    <div className="home-container">
       {/* first */}
       {/* first */}
       {/* first */}
-      <div className="relative flex justify-around ring-1 ring-blue-800 pb-24 py-5 rounded-md">
-        <div className="absolute w-screen h-96 right-16 top-24 bg-gray-800"></div>
+      <div>
+        <div></div>
         <p
-          className="text-5xl font-black z-10 mt-20 text-white ml-5"
           style={{ lineHeight: 2.5 }}
         >
           Hello there.
@@ -21,11 +20,9 @@ const HomePage = () => {
         </p>
         <img
           src="/media/uni/firstuni.png"
-          className="w-[500px] ml-[150px] h-full z-10 rounded-3xl"
         />
         <button
-          className="absolute bottom-7 left-44 text-gray-800 bg-blue-500 p-3 rounded-2xl text-xl font-bold
-        hover:bg-blue-600 hover:scale-105 duration-500 active:bg-blue-900 active:text-white ring-2 ring-white shadow-inner"
+          
         >
           Know me better{" "}
           <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />
@@ -59,8 +56,31 @@ const HomePage = () => {
           </p>
         </div>
       </div>
+
+      {/* third */}
+      {/* third */}
+      {/* third */}
+      <div >
+        <div ></div>
+        <p
+        
+          style={{ lineHeight: 1.5 }}
+        >
+          There are diferent activities I have in university:<br/>
+          -studying hard <br/>
+          -focus on projects <br/>
+          -programming in <span className="text-yellow-500">Python</span> <br/>
+          -volunteer works like
+          holding competetions, working on scintific magzine(<span className="text-green-500">ASPAD</span>), participating in
+          aerospace scintific assosiation’s activity and ect...
+        </p>
+        <img
+          src="/media/uni/thirduni.jpg"
+        />
+  
+      </div>
     </div>
   );
 };
 
-export default HomePage;
+export default Home;

@@ -1,8 +1,0 @@
-@layer components {
-  .home-container {
-    @apply flex ;
-    > div {
-      @apply bg-gray-600 h-80 w-80;
-    }
-  }
-}

@@ -36,7 +36,7 @@
     > div:nth-child(3) {
       @apply relative flex flex-col md:flex-row justify-around items-center pb-24 py-10 rounded-md;
       > div {
-        @apply absolute w-screen h-80 lg:h-[470px] right-3 md:right-16 top-5 md:top-24 bg-gray-700;
+        @apply absolute w-screen h-80 lg:h-[470px] right-0 md:right-16 top-5 md:top-24 bg-gray-700;
       }
       > p {
         @apply text-lg lg:text-2xl font-medium z-10 md:mt-20 text-white ml-3 w-11/12 sm:w-[450px];

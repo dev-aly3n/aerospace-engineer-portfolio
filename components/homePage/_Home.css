@@ -36,13 +36,17 @@
     > div:nth-child(3) {
       @apply relative flex flex-col md:flex-row justify-around items-center pb-24 py-10 rounded-md;
       > div {
-        @apply absolute w-screen h-80 lg:h-[400px] right-3 md:right-16 top-5 md:top-24 bg-gray-700;
+        @apply absolute w-screen h-80 lg:h-[470px] right-3 md:right-16 top-5 md:top-24 bg-gray-700;
       }
       > p {
         @apply text-lg lg:text-2xl font-medium z-10 md:mt-20 text-white ml-3 w-11/12 sm:w-[450px];
       }
       > img {
         @apply w-[400px] lg:w-[600px] xl:ml-[150px]  h-full z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0;
+      }
+      > button {
+        @apply absolute bottom-7  sm:left-28 md:left-44 text-gray-800 bg-blue-500 p-3 rounded-2xl text-xl font-bold
+                hover:bg-blue-600 hover:text-white hover:scale-105 duration-500 active:bg-blue-900 ring-2 ring-white shadow-inner;
       }
     }
   }

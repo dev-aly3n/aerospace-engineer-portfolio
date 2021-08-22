@@ -1,3 +1,4 @@
+import { useRef,useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import UniAchievement from "./UniAchievement";
@@ -5,6 +6,17 @@ import { uniAchievementData } from "../achievementData";
 import {AnimateSharedLayout, motion} from 'framer-motion';
 
 const Home = () => {
+  const secondRef = useRef(null);
+  const achieveRef = useRef(null);
+
+
+    const knowMeBtnHandler = () => {
+      secondRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+    const learnMoreBtnHandler = () => {
+      achieveRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    }
+
   return (
     <div className="home-container">
       {/* first */}
@@ -20,7 +32,7 @@ const Home = () => {
           An <span className="text-blue-600">AeroSpace</span> engineer.
         </p>
         <img src="/media/uni/firstuni.png" />
-        <button>
+        <button onClick={knowMeBtnHandler}>
           Know me better{" "}
           <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />
         </button>
@@ -29,7 +41,7 @@ const Home = () => {
       {/* second */}
       {/* second */}
       {/* second */}
-      <div>
+      <div ref={secondRef}>
         <div></div>
         <img src="/media/uni/seconduni.png" />
         <div className="text-and-title">
@@ -64,12 +76,16 @@ const Home = () => {
           in aerospace scintific assosiation’s activity and ect...
         </p>
         <img src="/media/uni/thirduni.jpg" />
+        <button onClick={learnMoreBtnHandler}>
+          Learn more...{" "}
+          <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />
+        </button>
       </div>
 
       {/* achievement */}
-      <div className="w-full flex flex-col justify-center items-center mt-5">
+      <div ref={achieveRef} className="w-full flex flex-col justify-center items-center mt-10">
       <h2 className="text-3xl text-white">My Achievements</h2>
-      <div className="w-8/12 sm:w-1/2 h-px mt-2 bg-white"></div>
+      <div className="w-8/12 sm:w-1/2 h-px mt-2 bg-white mb-10"></div>
       <AnimateSharedLayout>
       <motion.ul layout className="uni-achieve-list-container flex flex-col gap-y-10 md:gap-y-20 mx-10 py-10 w-10/12 md:w-8/12">
       {uniAchievementData[0] &&

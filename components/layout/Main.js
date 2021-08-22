@@ -1,6 +1,6 @@
 const Main = (props) => {
   return (
-    <main className="bg-black w-full min-h-screen overflow-x-hidden">
+    <main className="bg-black w-full overflow-hidden">
       {props.children}
     </main>
   );

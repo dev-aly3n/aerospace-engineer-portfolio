@@ -1,21 +1,28 @@
-import { useRef,useEffect } from "react";
+import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import UniAchievement from "./UniAchievement";
 import { uniAchievementData } from "../achievementData";
-import {AnimateSharedLayout, motion} from 'framer-motion';
+import { AnimateSharedLayout, motion } from "framer-motion";
 
 const Home = () => {
   const secondRef = useRef(null);
   const achieveRef = useRef(null);
 
-
-    const knowMeBtnHandler = () => {
-      secondRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    }
-    const learnMoreBtnHandler = () => {
-      achieveRef.current.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-    }
+  const knowMeBtnHandler = () => {
+    secondRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
+  const learnMoreBtnHandler = () => {
+    achieveRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
 
   return (
     <div className="home-container">
@@ -83,18 +90,19 @@ const Home = () => {
       </div>
 
       {/* achievement */}
-      <div ref={achieveRef} className="w-full flex flex-col justify-center items-center mt-10">
-      <h2 className="text-3xl text-white">My Achievements</h2>
-      <div className="w-8/12 sm:w-1/2 h-px mt-2 bg-white mb-10"></div>
-      <AnimateSharedLayout>
-      <motion.ul layout className="uni-achieve-list-container flex flex-col gap-y-10 md:gap-y-20 mx-10 py-10 w-10/12 md:w-8/12">
-      {uniAchievementData[0] &&
-        uniAchievementData.map((uniachieve) => {
-          return <UniAchievement achieve={uniachieve} />;
-        })}
-        </motion.ul>
+      {/* achievement */}
+      <div ref={achieveRef} className="achievement">
+        <h2>My Achievements</h2>
+        <div></div>
+        <AnimateSharedLayout>
+          <motion.ul layout className="uni-achieve-list-container">
+            {uniAchievementData[0] &&
+              uniAchievementData.map((uniachieve) => {
+                return <UniAchievement achieve={uniachieve} />;
+              })}
+          </motion.ul>
         </AnimateSharedLayout>
-        </div>
+      </div>
     </div>
   );
 };

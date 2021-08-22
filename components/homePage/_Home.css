@@ -49,6 +49,17 @@
                 hover:bg-blue-600 hover:text-white hover:scale-105 duration-500 active:bg-blue-900 ring-2 ring-white shadow-inner;
       }
     }
+    .achievement {
+      @apply w-full flex flex-col justify-center items-center mt-10;
+      > h2 {
+        @apply text-3xl text-white;
+      }
+      > div:first-of-type {
+        @apply w-8/12 sm:w-1/2 h-px mt-2 bg-white mb-10;
+      }
+    }
+    .uni-achieve-list-container {
+      @apply flex flex-col gap-y-10 md:gap-y-20 mx-10 py-10 w-10/12 md:w-8/12;
+    }
   }
-
 }

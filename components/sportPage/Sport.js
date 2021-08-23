@@ -1,7 +1,19 @@
-import {AnimateSharedLayout,motion} from 'framer-motion';
+import { AnimateSharedLayout, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { sportAchievementData } from "../achievementData";
+import { useRef } from "react";
+import Achievement from "../Achievement";
+
 const Sport = () => {
+  const achieveRef = useRef(null);
+  const atTheFollowingHandler = () => {
+    achieveRef.current.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest",
+    });
+  };
   return (
     <div className="flex flex-col justify-center items-center w-full">
       {/* first */}
@@ -69,7 +81,10 @@ const Sport = () => {
             brain and make my body healthy. I have many{" "}
             <span className="text-yellow-400">Medals</span> in Poomsae
             competetions that you can see them
-            <button className="text-blue-300 hover:scale-105 duration-700 hover:text-blue-600 font-black">
+            <button
+              onClick={atTheFollowingHandler}
+              className="text-blue-300 hover:scale-105 duration-700 hover:text-blue-600 font-black"
+            >
               at the following!{" "}
               <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />
             </button>
@@ -77,16 +92,15 @@ const Sport = () => {
         </p>
       </div>
 
-
-            {/* achievement */}
+      {/* achievement */}
       {/* achievement */}
       <div ref={achieveRef} className="achievement">
         <h2>My Achievements</h2>
         <div></div>
         <AnimateSharedLayout>
           <motion.ul layout className="achieve-list-container">
-            {uniAchievementData[0] &&
-              uniAchievementData.map((uniachieve) => {
+            {sportAchievementData[0] &&
+              sportAchievementData.map((uniachieve) => {
                 return <Achievement achieve={uniachieve} />;
               })}
           </motion.ul>

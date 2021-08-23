@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 const Achievement = ({ achieve }) => {
   const [expand, setExpand] = useState(false);
@@ -9,6 +11,10 @@ const Achievement = ({ achieve }) => {
   return (
     <motion.li layout className="uni-achievement-container">
       <motion.h3 layout onClick={descClickHandler}>
+        <FontAwesomeIcon
+          icon={faAngleRight}
+          className={` transform  duration-700 ${expand ? "rotate-90 " : ""}`}
+        />{" "}
         {achieve.title}
       </motion.h3>
       {expand && (

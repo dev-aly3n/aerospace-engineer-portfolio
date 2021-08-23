@@ -42,17 +42,17 @@
     }
     > div:nth-child(3) {
       @apply flex flex-col md:flex-row relative w-full justify-evenly items-center mt-32 mb-20 md:mb-44;
-      >div:first-of-type {
+      > div:first-of-type {
         @apply absolute top-10 left-5 sm:left-10 lg:left-24 xl:left-48 h-[420px] lg:h-[500px] bg-gray-900 w-full;
       }
-      >p{
-        @apply z-10 text-2xl lg:text-4xl text-white sm:w-[450px] font-black mt-16 ml-8 sm:ml-14 lg:ml-32 xl:ml-44 mr-3;
+      > p {
+        @apply z-10 text-2xl lg:text-4xl text-white sm:w-[450px] font-black mt-16 ml-8 sm:ml-14 lg:ml-32 xl:ml-44 pr-5;
       }
-      button{
+      button {
         @apply text-blue-300 hover:scale-105 duration-700 hover:text-blue-600 font-black;
       }
-      >img{
-        border-radius:0.5rem 1.5rem 8rem 0.9rem;
+      > img {
+        border-radius: 0.5rem 1.5rem 8rem 0.9rem;
         @apply sm:h-[330px] lg:h-[400px] z-10 shadow-2xl mt-8;
       }
     }

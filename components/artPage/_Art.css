@@ -1,0 +1,89 @@
+@layer components {
+
+.art-container{
+
+
+
+}
+}
+
+@keyframes musicNote1 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(60%);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 0.5;
+    }
+}
+@keyframes musicNote2 {
+    0%{
+        transform: translateY(60%);
+    }
+    50%{
+        transform: translateY(0%);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(60%);
+        opacity: 0.5;
+    }
+}
+@keyframes musicNote3 {
+    0%{
+        transform: translateY(10%);
+    }
+    50%{
+        transform: translateY(100%);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-20%);
+        opacity: 0.5;
+    }
+}
+@keyframes musicNote4 {
+    0%{
+        transform: translateY(30%);
+    }
+    50%{
+        transform: translateY(-20%);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(20%);
+        opacity: 0.5;
+    }
+}
+@keyframes musicNote0 {
+    0%{
+        transform: translateY(40%);
+    }
+    50%{
+        transform: translateY(-30%);
+        opacity: 1;
+    }
+    70%{
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(0%);
+        opacity: 0.5;
+    }
+}

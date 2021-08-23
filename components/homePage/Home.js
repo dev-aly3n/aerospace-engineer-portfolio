@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import UniAchievement from "./UniAchievement";
+import Achievement from "../Achievement";
 import { uniAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
 
@@ -98,7 +98,7 @@ const Home = () => {
           <motion.ul layout className="uni-achieve-list-container">
             {uniAchievementData[0] &&
               uniAchievementData.map((uniachieve) => {
-                return <UniAchievement achieve={uniachieve} />;
+                return <Achievement achieve={uniachieve} />;
               })}
           </motion.ul>
         </AnimateSharedLayout>

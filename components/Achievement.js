@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const UniAchievement = ({ achieve }) => {
+const Achievement = ({ achieve }) => {
   const [expand, setExpand] = useState(false);
   const descClickHandler = () => {
     setExpand(!expand);
@@ -35,4 +35,4 @@ const UniAchievement = ({ achieve }) => {
   );
 };
 
-export default UniAchievement;
+export default Achievement;

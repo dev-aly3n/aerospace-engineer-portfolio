@@ -32,7 +32,8 @@ const Sport = () => {
       <div className="flex relative w-full justify-evenly items-center mt-32">
         <div className="absolute top-10 right-5 sm:right-10 lg:right-36 xl:right-60 h-[400px] bg-gray-900 w-full"></div>
         <img
-          className="h-[500px] z-10 border-r-8 border-t-4 rounded-3xl" style={{borderColor:"#FCCEC1"}}
+          className="h-[500px] z-10 border-r-8 border-t-4 rounded-3xl"
+          style={{ borderColor: "#FCCEC1" }}
           src="/media/sport/sportsecond.png"
           alt=""
         />
@@ -54,7 +55,8 @@ const Sport = () => {
       <div className="flex relative w-full justify-evenly items-center mt-32 mb-80">
         <div className="absolute top-10 left-5 sm:left-10 lg:left-36 xl:left-60 h-[400px] bg-gray-900 w-full"></div>
         <img
-          className="h-[400px] z-10 shadow-2xl " style={{borderRadius:"0.5rem 1.5rem 8rem 0.9rem"}}
+          className="h-[400px] z-10 shadow-2xl "
+          style={{ borderRadius: "0.5rem 1.5rem 8rem 0.9rem" }}
           src="/media/sport/sportthird.jpg"
           alt=""
         />

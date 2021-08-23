@@ -8,3 +8,16 @@
 @import '../components/_components.css';
 @import '../pages/_pages.css';
 
+
+/* chrome */
+*::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  *::-webkit-scrollbar-thumb {
+    background-color: darkgray;
+  }
+/* firefox */
+* {
+scrollbar-width:thin;
+scrollbar-color: darkgray;
+}

@@ -1,3 +1,4 @@
+import {AnimateSharedLayout,motion} from 'framer-motion';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 const Sport = () => {
@@ -74,6 +75,22 @@ const Sport = () => {
             </button>
           </span>
         </p>
+      </div>
+
+
+            {/* achievement */}
+      {/* achievement */}
+      <div ref={achieveRef} className="achievement">
+        <h2>My Achievements</h2>
+        <div></div>
+        <AnimateSharedLayout>
+          <motion.ul layout className="achieve-list-container">
+            {uniAchievementData[0] &&
+              uniAchievementData.map((uniachieve) => {
+                return <Achievement achieve={uniachieve} />;
+              })}
+          </motion.ul>
+        </AnimateSharedLayout>
       </div>
     </div>
   );

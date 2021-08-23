@@ -1,5 +1,5 @@
 @layer components {
-  .uni-achievement-container {
+  .achievement-container {
     @apply flex flex-col justify-center items-start w-full;
     > h3 {
       @apply text-xl md:text-2xl text-gray-200 font-semibold w-full hover:text-blue-200 cursor-pointer;
@@ -19,5 +19,18 @@
     > div:last-child {
       @apply w-full h-0.5 mt-2 bg-white;
     }
+  }
+
+  .achievement {
+    @apply w-full flex flex-col justify-center items-center mt-10;
+    > h2 {
+      @apply text-3xl text-white;
+    }
+    > div:first-of-type {
+      @apply w-8/12 sm:w-1/2 h-px mt-2 bg-white mb-10;
+    }
+  }
+  .achieve-list-container {
+    @apply flex flex-col gap-y-10 md:gap-y-20 mx-10 py-10 w-10/12 md:w-8/12;
   }
 }

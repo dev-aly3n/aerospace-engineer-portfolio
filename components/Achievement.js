@@ -9,7 +9,7 @@ const Achievement = ({ achieve }) => {
     setExpand(!expand);
   };
   return (
-    <motion.li layout className="uni-achievement-container">
+    <motion.li layout className="achievement-container">
       <motion.h3 layout onClick={descClickHandler}>
         <FontAwesomeIcon
           icon={faAngleRight}

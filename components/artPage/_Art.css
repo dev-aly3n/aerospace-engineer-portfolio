@@ -20,7 +20,7 @@
     }
     100%{
         transform: translateY(0%);
-        opacity: 0.5;
+        opacity: 0.3;
     }
 }
 @keyframes musicNote2 {
@@ -36,7 +36,7 @@
     }
     100%{
         transform: translateY(60%);
-        opacity: 0.5;
+        opacity: 0.3;
     }
 }
 @keyframes musicNote3 {
@@ -52,7 +52,7 @@
     }
     100%{
         transform: translateY(-20%);
-        opacity: 0.5;
+        opacity: 0.3;
     }
 }
 @keyframes musicNote4 {
@@ -68,7 +68,7 @@
     }
     100%{
         transform: translateY(20%);
-        opacity: 0.5;
+        opacity: 0.3;
     }
 }
 @keyframes musicNote0 {
@@ -84,6 +84,6 @@
     }
     100%{
         transform: translateY(0%);
-        opacity: 0.5;
+        opacity: 0.3;
     }
 }

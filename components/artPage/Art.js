@@ -28,7 +28,7 @@ const Art = () => {
             })}
           </div>
         </div>
-        <div className="relative ssm:w-1/2 md:w-5/12 h-full duration-1000 peer-hover:translate-x-10">
+        <div className="relative ssm:w-1/2 md:w-5/12 h-full duration-2000 md:peer-hover:translate-x-10 filter peer-hover:grayscale peer-hover:blur-ssm shadow-lg">
           <img
             className="w-10/12 m-auto ssm:w-full h-full filter contrast-75 shadow-2xl rounded-md
             hover:scale-110 ssm:rounded-none duration-1000 "

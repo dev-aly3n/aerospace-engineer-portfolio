@@ -3,14 +3,14 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
-const Achievement = ({ achieve }) => {
+const Achievement = ({ achieve, light }) => {
   const [expand, setExpand] = useState(false);
   const descClickHandler = () => {
     setExpand(!expand);
   };
   return (
-    <motion.li layout className="achievement-container">
-      <motion.h3 layout onClick={descClickHandler}>
+    <motion.li layout className={`achievement-container ${light? "!text-black":""}`}>
+      <motion.h3 layout onClick={descClickHandler} className={`${light? "!text-black":""}`}>
         <FontAwesomeIcon
           icon={faAngleRight}
           className={` transform  duration-700 ${expand ? "rotate-90 " : ""}`}
@@ -25,7 +25,7 @@ const Achievement = ({ achieve }) => {
           exit={{ opacity: 0 }}
           className="expand-div"
         >
-          <p>{achieve.desc}</p>
+          <p className={`${light? "!text-black":""}`}>{achieve.desc}</p>
           {achieve.image ? (
             <img src={achieve.image} />
           ) : (
@@ -36,7 +36,7 @@ const Achievement = ({ achieve }) => {
           )}
         </motion.div>
       )}
-      <div></div>
+      <div className={`${light? "!bg-black":""}`}></div>
     </motion.li>
   );
 };

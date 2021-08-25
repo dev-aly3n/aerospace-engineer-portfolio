@@ -1,14 +1,25 @@
-import { faMusic } from "@fortawesome/free-solid-svg-icons";
+import { faMusic, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 import Achievement from "../Achievement";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { artAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 const Art = () => {
+  const firstVideoRef = useRef(null);
+  const [showBtn, setShowBtn] = useState(true);
   const achieveRef = useRef(null);
   const musicNotes = [...Array(15).keys()];
-  console.log(musicNotes);
+
+  const firstVideoClickHandler = () => {
+    if (firstVideoRef.current.paused) {
+      firstVideoRef.current.play();
+      setShowBtn(false);
+    } else {
+      firstVideoRef.current.pause();
+      setShowBtn(true);
+    }
+  };
   return (
     <div className="w-full h-full flex flex-col bg-blue-50 art-container">
       {/* first */}
@@ -29,7 +40,7 @@ const Art = () => {
                   className="h-8 "
                   style={{
                     animation: `musicNote${randomNum % 5} ${
-                      (randomNum % 8) + 5
+                      (randomNum % (showBtn ? 8 : 1)) + (showBtn ? 5 : 1)
                     }s ease-out 0s infinite alternate`,
                   }}
                   src={`/media/art/musicnote${note % 3}.png`}
@@ -40,13 +51,30 @@ const Art = () => {
           </div>
         </div>
         <div
-          className="relative ssm:w-1/2 md:w-5/12 h-full duration-2000 md:peer-hover:translate-x-10
-         filter peer-hover:grayscale peer-hover:blur-ssm shadow-lg"
+          className={`relative ssm:w-1/2 md:w-5/12 h-full duration-2000 shadow-lg cursor-pointer
+          ${
+            showBtn
+              ? "md:peer-hover:translate-x-10 filter peer-hover:grayscale peer-hover:blur-ssm"
+              : ""
+          }`}
+          onClick={firstVideoClickHandler}
         >
+          <div
+            className={`${
+              showBtn ? "flex" : "hidden"
+            }  absolute justify-center items-center w-full h-full text-7xl text-gray-600/80 z-10 peer`}
+          >
+            <FontAwesomeIcon icon={faPlayCircle} />
+          </div>
           <video
-          poster={"/media/art/artfirst.jpg"} width="500px"
-            className="w-10/12 m-auto ssm:w-full h-full filter contrast-75 shadow-2xl rounded-md
-            hover:scale-110 ssm:rounded-none duration-1000 z-10"
+            ref={firstVideoRef}
+            preload="none"
+            loop
+            poster={"/media/art/artfirst.jpg"}
+            width="500px"
+            className={`${
+              showBtn ? "peer-hover:scale-110" : ""
+            } w-10/12 m-auto ssm:w-full h-full filter contrast-75 shadow-2xl rounded-md ssm:rounded-none duration-1500`}
             alt=""
           >
             <source src={"/media/art/artvideofirst.mp4"} type="video/mp4" />
@@ -58,9 +86,7 @@ const Art = () => {
       {/* second */}
 
       <div className="flex flex-col justify-center items-center h-full mt-32 mx-auto w-11/12 ssm:w-10/12 ">
-        <h3 className=" text-3xl font-bold self-start">
-          About Daf
-        </h3>
+        <h3 className=" text-3xl font-bold self-start">About Daf</h3>
         <div className="flex flex-col md:flex-row justify-evenly items-center bg-blue-50 ">
           <div className="flex flex-col gap-y-5 sm:gap-y-10 justify-evenly items-start text-base lg:text-xl w-11/12 md:w-1/2">
             <p>

@@ -62,9 +62,12 @@ const Art = () => {
           <div
             className={`${
               showBtn ? "flex" : "hidden"
-            }  absolute justify-center items-center w-full h-full text-7xl text-gray-600/80 z-10 peer`}
+            }  absolute justify-center items-center w-full h-full text-7xl text-pink-100/75 z-10 peer`}
           >
-            <FontAwesomeIcon icon={faPlayCircle} />
+            <FontAwesomeIcon
+              className="hover:text-pink-200 duration-700"
+              icon={faPlayCircle}
+            />
           </div>
           <video
             ref={firstVideoRef}
@@ -86,7 +89,9 @@ const Art = () => {
       {/* second */}
 
       <div className="flex flex-col justify-center items-center h-full mt-32 mx-auto w-11/12 ssm:w-10/12 ">
-        <h3 className=" text-3xl font-bold self-start">About Daf</h3>
+        <h3 className=" text-3xl font-bold self-start mb-8 md:mb-0">
+          About Daf
+        </h3>
         <div className="flex flex-col md:flex-row justify-evenly items-center bg-blue-50 ">
           <div className="flex flex-col gap-y-5 sm:gap-y-10 justify-evenly items-start text-base lg:text-xl w-11/12 md:w-1/2">
             <p>
@@ -126,13 +131,13 @@ const Art = () => {
       {/* third */}
       {/* third */}
       {/* third */}
-      <div className="flex flex-col ssm:flex-row justify-center items-start bg-blue-50 h-full mx-auto w-10/12 relative mt-32">
-        <div className="w-[400px]">
+      <div className="flex flex-col ssm:flex-row justify-center items-center bg-blue-50 h-full mx-auto w-10/12 relative mt-20">
+        <div className="w-[400px] self-start mt-32 hidden md:block">
           <img src="media/art/artthird.png" alt="" />
         </div>
-        <div className="w-10/12  ">
+        <div className="ssm:w-10/12 ">
           <div ref={achieveRef} className="achievement ">
-            <h2 className="!text-black">My Achievements</h2>
+            <h2 className="!text-black !font-bold">My Achievements</h2>
             <div className="!bg-black"></div>
             <AnimateSharedLayout>
               <motion.ul layout className="achieve-list-container !w-full ">

@@ -74,7 +74,7 @@ module.exports = {
       none: 'none',
       spin: 'spin 1s linear infinite',
       ping: 'ping 1s cubic-bezier(0, 0, 0.2, 1) infinite',
-      pulse: 'pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+      pulse: 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
       bounce: 'bounce 1s infinite',
     },
     backdropBlur: (theme) => theme('blur'),
@@ -118,6 +118,7 @@ module.exports = {
     blur: {
       0: '0',
       none: '0',
+      px: '1px',
       ssm: '2px',
       sm: '4px',
       DEFAULT: '8px',
@@ -735,6 +736,8 @@ module.exports = {
       1000: '1000ms',
       1500: '1500ms',
       2000: '2000ms',
+      3000: '3000ms',
+      4000: '4000ms',
     },
     transitionProperty: {
       none: 'none',

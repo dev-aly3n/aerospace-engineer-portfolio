@@ -1,89 +1,143 @@
 @layer components {
-
-.art-container{
-
-
-
-}
+  .art-container {
+    @apply w-full h-full flex flex-col bg-blue-50;
+    > div:nth-child(1) {
+      @apply flex flex-col ssm:flex-row justify-between bg-pink-100 overflow-hidden shadow-lg;
+      > div:first-child {
+        color: #307393;
+        @apply h-52 -mb-12 ssm:h-auto ssm:w-1/2 md:w-7/12 flex justify-center items-center
+        text-4xl sm:text-5xl md:text-7xl font-black relative hover:scale-110 duration-1000;
+        > div {
+          @apply absolute flex gap-x-7 justify-evenly w-screen top-6 ssm:top-10 sm:top-20 md:top-32 lg:top-44 xl:top-64;
+          > img {
+            @apply h-8;
+          }
+        }
+      }
+      > div:last-child {
+        @apply relative ssm:w-1/2 md:w-5/12 h-full duration-2000 shadow-lg cursor-pointer;
+        > div {
+          @apply absolute justify-center items-center w-full h-full text-7xl text-pink-100/75 z-10;
+          .font-icon-class {
+            @apply hover:text-pink-200 duration-700;
+          }
+        }
+        > video {
+          @apply w-10/12 m-auto ssm:w-full h-full filter contrast-75 shadow-2xl rounded-md ssm:rounded-none duration-1500;
+        }
+      }
+    }
+    > div:nth-child(2) {
+      @apply flex flex-col justify-center items-center h-full mt-32 mx-auto w-11/12 ssm:w-10/12;
+      > h3 {
+        @apply text-3xl font-bold self-start mb-8 md:mb-0;
+      }
+      > div {
+        @apply flex flex-col md:flex-row justify-evenly items-center bg-blue-50;
+        > div:first-child {
+          @apply flex flex-col gap-y-5 sm:gap-y-10 justify-evenly items-start text-base lg:text-xl w-11/12 md:w-1/2;
+          > p:last-child {
+            @apply font-semibold lg:text-xl;
+          }
+        }
+        > div:last-child {
+          @apply ssm:w-[400px] mt-7 md:mt-0 rounded-md overflow-hidden ssm:hover:translate-x-3 duration-1500 shadow-neu1;
+          > img {
+            @apply w-full hover:scale-105 hover:rotate-2 duration-1500;
+          }
+        }
+      }
+    }
+    > div:nth-child(3) {
+        @apply flex flex-col ssm:flex-row justify-center items-center bg-blue-50 h-full mx-auto w-10/12 relative mt-20;
+        >div:first-child{
+            @apply w-[400px] self-start mt-32 hidden md:block;
+        }
+        >div:last-child{
+            @apply ssm:w-10/12 ;
+            
+        }
+    }
+  }
 }
 
 @keyframes musicNote1 {
-    0%{
-        transform: translateY(0);
-    }
-    50%{
-        transform: translateY(60%);
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(0%);
-        opacity: 0.3;
-    }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(60%);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0.3;
+  }
 }
 @keyframes musicNote2 {
-    0%{
-        transform: translateY(60%);
-    }
-    50%{
-        transform: translateY(0%);
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(60%);
-        opacity: 0.3;
-    }
+  0% {
+    transform: translateY(60%);
+  }
+  50% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(60%);
+    opacity: 0.3;
+  }
 }
 @keyframes musicNote3 {
-    0%{
-        transform: translateY(10%);
-    }
-    50%{
-        transform: translateY(100%);
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(-20%);
-        opacity: 0.3;
-    }
+  0% {
+    transform: translateY(10%);
+  }
+  50% {
+    transform: translateY(100%);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-20%);
+    opacity: 0.3;
+  }
 }
 @keyframes musicNote4 {
-    0%{
-        transform: translateY(30%);
-    }
-    50%{
-        transform: translateY(-20%);
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(20%);
-        opacity: 0.3;
-    }
+  0% {
+    transform: translateY(30%);
+  }
+  50% {
+    transform: translateY(-20%);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 0.3;
+  }
 }
 @keyframes musicNote0 {
-    0%{
-        transform: translateY(40%);
-    }
-    50%{
-        transform: translateY(-30%);
-        opacity: 1;
-    }
-    70%{
-        opacity: 1;
-    }
-    100%{
-        transform: translateY(0%);
-        opacity: 0.3;
-    }
+  0% {
+    transform: translateY(40%);
+  }
+  50% {
+    transform: translateY(-30%);
+    opacity: 1;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 0.3;
+  }
 }

@@ -16,12 +16,16 @@
       }
       > div:last-child {
         @apply relative ssm:w-1/2 md:w-5/12 h-full duration-2000 shadow-lg cursor-pointer;
-        > div {
-          @apply absolute justify-center items-center w-full h-full text-7xl text-pink-100/75 z-10;
+        > .play-btn {
+          @apply absolute flex justify-center items-center w-full h-full text-7xl text-pink-100/75 z-10;
           .font-icon-class {
             @apply hover:text-pink-200 duration-700;
           }
         }
+        > .loading-ring {
+          @apply absolute flex justify-center items-center w-full h-full text-7xl text-pink-100/75 z-20;
+        }
+
         > video {
           @apply w-10/12 m-auto ssm:w-full h-full filter contrast-75 shadow-2xl rounded-md ssm:rounded-none duration-1500;
         }

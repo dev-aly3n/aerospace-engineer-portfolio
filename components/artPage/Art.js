@@ -4,10 +4,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { artAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import { useRef, useState } from "react";
+import LoadingRing from "../LoadingRing";
 
 const Art = () => {
   const firstVideoRef = useRef(null);
   const [showBtn, setShowBtn] = useState(true);
+  const [isLoadingVideo, setIsLoadingVideo] = useState(false);
   const achieveRef = useRef(null);
   const musicNotes = [...Array(15).keys()];
 
@@ -20,6 +22,7 @@ const Art = () => {
       setShowBtn(true);
     }
   };
+
   return (
     <div className="art-container">
       {/* first */}
@@ -54,10 +57,22 @@ const Art = () => {
           }`}
           onClick={firstVideoClickHandler}
         >
-          <div className={`${showBtn ? "flex" : "hidden"}   peer`}>
-            <FontAwesomeIcon className="font-icon-class" icon={faPlayCircle} />
-          </div>
+          {showBtn && (
+            <div className="play-btn peer">
+              <FontAwesomeIcon
+                className="font-icon-class"
+                icon={faPlayCircle}
+              />
+            </div>
+          )}
+          {!showBtn && isLoadingVideo && (
+            <div className="loading-ring">
+              <LoadingRing />
+            </div>
+          )}
           <video
+            onWaiting={() => setIsLoadingVideo(true)}
+            onCanPlay={() => setIsLoadingVideo(false)}
             ref={firstVideoRef}
             preload="none"
             loop

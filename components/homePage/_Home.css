@@ -5,7 +5,7 @@
     > div:nth-child(1) {
       @apply relative flex flex-col md:flex-row justify-around items-center md:ring-1 ring-blue-600/50 pb-24 py-5 rounded-md;
       > div {
-        @apply absolute w-screen h-72  lg:h-96 right-3 sm:right-4 md:right-16 top-5 md:top-24 bg-gray-900;
+        @apply absolute w-screen h-72  lg:h-96 right-1 md:right-16 top-5 md:top-24 bg-gray-900;
       }
       > p {
         @apply text-2xl sm:text-3xl lg:text-[40px] xl:text-5xl font-black z-10 md:mt-20 text-white ml-3;

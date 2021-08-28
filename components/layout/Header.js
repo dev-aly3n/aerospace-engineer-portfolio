@@ -21,12 +21,12 @@ const headerLinks = [
 
 const Header = () => {
   return (
-      <div className="h-full w-full bg-gray-900 flex flex-col sm:flex-row justify-evenly items-center">
+      <div className="h-full w-full flex flex-col sm:flex-row justify-evenly items-center bg-gray-900">
         <h1
           className="text-xl sm:text-2xl md:text-3xl pt-2 whitespace-nowrap text-white"
           style={{ fontFamily: "'Berkshire Swash', cursive" }}
         >
-          Atefeh Hasani
+          <Link href='/' >Atefeh Hasani</Link>
         </h1>
         <ul className="flex justify-center items-stretch sm:text-xl font-bold">
           {headerLinks.map((headLink) => {

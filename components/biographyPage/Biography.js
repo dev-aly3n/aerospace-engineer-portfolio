@@ -1,4 +1,4 @@
-const Life = () => {
+const Biography = () => {
   return (
     <div className="flex flex-col justify-center items-center">
       {/* first */}
@@ -43,4 +43,4 @@ const Life = () => {
   );
 };
 
-export default Life;
+export default Biography;

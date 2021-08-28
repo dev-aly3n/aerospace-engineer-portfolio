@@ -1,25 +1,48 @@
 import Link from "next/link";
 
+const headerLinks = [
+  {
+    ref: "/",
+    text: "University",
+  },
+  {
+    ref: "/sport",
+    text: "Sport",
+  },
+  {
+    ref: "/art",
+    text: "Art",
+  },
+  {
+    ref: "/biography",
+    text: "Biography",
+  },
+];
+
 const Header = () => {
   return (
-    <div className="h-16 w-full bg-gray-900">
-      <ul className="flex justify-center items-center   text-xl font-bold gap-x-20">
-        <li>
-          <Link href="/">
-            <a className="text-white  hover:bg-gray-100 hover:text-black px-5 py-3 block">
-              University
-            </a>
-          </Link>
-        </li>
-        <li>
-          <Link href="/sport">
-            <a className="text-white  hover:bg-gray-100 hover:text-black px-5 py-3 block">
-              Sport
-            </a>
-          </Link>
-        </li>
-      </ul>
-    </div>
+      <div className="h-full w-full bg-gray-900 flex flex-col sm:flex-row justify-evenly items-center">
+        <h1
+          className="text-xl sm:text-2xl md:text-3xl pt-2 whitespace-nowrap text-white"
+          style={{ fontFamily: "'Berkshire Swash', cursive" }}
+        >
+          Atefeh Hasani
+        </h1>
+        <ul className="flex justify-center items-stretch sm:text-xl font-bold">
+          {headerLinks.map((headLink) => {
+            return (
+              <li>
+                <Link href={headLink.ref}>
+                  <a className="text-white  hover:bg-gray-100
+                   hover:text-black px-3 md:px-6 lg:px-10 py-3 md:py-5 block duration-700">
+                    {headLink.text}
+                  </a>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
   );
 };
 

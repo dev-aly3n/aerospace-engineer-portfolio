@@ -7,8 +7,6 @@ export const useOnScrollAnimation = () => {
 
   if (view) {
     controls.start("visable");
-  } else {
-    controls.start("hidden");
   }
 
   return [element, controls];

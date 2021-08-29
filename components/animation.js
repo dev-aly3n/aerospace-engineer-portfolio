@@ -105,7 +105,7 @@ export const photoAnimation = {
 
 export const sectionAnimation = {
   hidden: {
-    opacity: 0,
+    opacity: 0.7,
     scale: 1.1,
     transition: { duration: 1 },
   },

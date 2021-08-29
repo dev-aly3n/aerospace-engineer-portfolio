@@ -45,25 +45,25 @@ export const leftToRightAnimation = {
 };
 
 export const rightToLeftAnimation = {
-    hidden: {
-      opacity: 0,
-      x: 700,
+  hidden: {
+    opacity: 0,
+    x: 700,
+  },
+
+  visable: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      duration: 1,
+      staggerChildren: 0.3,
     },
-  
-    visable: {
-      opacity: 1,
-      x: 0,
-      transition: {
-        duration: 1,
-        staggerChildren: 0.3,
-      },
-    },
-    out: {
-      opacity: 0,
-      x: -200,
-      transition: { duration: 0.5 },
-    },
-  };
+  },
+  out: {
+    opacity: 0,
+    x: -200,
+    transition: { duration: 0.5 },
+  },
+};
 //home
 //home
 //home
@@ -76,7 +76,6 @@ export const textAnimation = {
     transition: { duration: 0.7, ease: "easeOut" },
     y: 0,
     opacity: 1,
-    textShadow: "0 1px 0 #cccccc, 0 2px 0 #cccccc, 0 3px 0 #cccccc",
   },
 };
 
@@ -88,7 +87,7 @@ export const buttonAnimation = {
   visable: {
     scale: 1,
     opacity: 1,
-    transition: { duration: 1.5, ease: "easeOut" },
+    transition: { duration: 1 },
   },
 };
 
@@ -101,5 +100,23 @@ export const photoAnimation = {
     scale: 1,
     opacity: 1,
     transition: { duration: 0.5 },
+  },
+};
+
+export const sectionAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 1.1,
+    transition: { duration: 1 },
+  },
+  visable: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.1,
+      ease: "easeInOut",
+      when: "beforeChildren",
+      staggerChildren: 0.5,
+    },
   },
 };

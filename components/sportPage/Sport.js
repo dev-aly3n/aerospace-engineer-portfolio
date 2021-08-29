@@ -4,6 +4,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { sportAchievementData } from "../achievementData";
 import { useRef } from "react";
 import Achievement from "../Achievement";
+import { pageAnimation } from "../animation";
 
 const Sport = () => {
   const achieveRef = useRef(null);
@@ -15,7 +16,12 @@ const Sport = () => {
     });
   };
   return (
-    <div className="sport-container">
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="visable"
+      className="sport-container"
+    >
       {/* first */}
       {/* first */}
       {/* first */}
@@ -84,7 +90,7 @@ const Sport = () => {
           </motion.ul>
         </AnimateSharedLayout>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

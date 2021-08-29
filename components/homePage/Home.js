@@ -4,6 +4,8 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Achievement from "../Achievement";
 import { uniAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
+import {pageAnimation} from '../animation';
+
 
 const Home = () => {
   const secondRef = useRef(null);
@@ -25,7 +27,7 @@ const Home = () => {
   };
 
   return (
-    <div className="home-container">
+    <motion.div variants={pageAnimation} initial="hidden" animate="visable" className="home-container">
       {/* first */}
       {/* first */}
       {/* first */}
@@ -103,7 +105,7 @@ const Home = () => {
           </motion.ul>
         </AnimateSharedLayout>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,6 +1,9 @@
+import {motion} from 'framer-motion';
+import {pageAnimation} from '../animation';
+
 const Biography = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <motion.div variants={pageAnimation} initial="hidden" animate="visable" className="flex flex-col justify-center items-center">
       {/* first */}
       {/* first */}
       {/* first */}
@@ -39,7 +42,7 @@ const Biography = () => {
           1999 at Tehran.{" "}
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

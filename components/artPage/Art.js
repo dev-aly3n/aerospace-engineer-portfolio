@@ -5,6 +5,7 @@ import { artAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
 import { useRef, useState } from "react";
 import LoadingRing from "../LoadingRing";
+import {pageAnimation} from '../animation';
 
 const Art = () => {
   const firstVideoRef = useRef(null);
@@ -24,7 +25,7 @@ const Art = () => {
   };
 
   return (
-    <div className="art-container">
+    <motion.div variants={pageAnimation} initial="hidden" animate="visable" className="art-container">
       {/* first */}
       {/* first */}
       {/* first */}
@@ -145,7 +146,7 @@ const Art = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

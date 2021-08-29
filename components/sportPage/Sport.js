@@ -20,6 +20,7 @@ const Sport = () => {
       variants={pageAnimation}
       initial="hidden"
       animate="visable"
+      exit="out"
       className="sport-container"
     >
       {/* first */}

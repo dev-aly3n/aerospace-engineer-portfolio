@@ -25,7 +25,7 @@ const Art = () => {
   };
 
   return (
-    <motion.div variants={pageAnimation} initial="hidden" animate="visable" className="art-container">
+    <motion.div variants={pageAnimation} initial="hidden" animate="visable" exit="out" className="art-container">
       {/* first */}
       {/* first */}
       {/* first */}

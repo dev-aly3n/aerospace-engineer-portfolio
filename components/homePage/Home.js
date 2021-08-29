@@ -4,8 +4,15 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Achievement from "../Achievement";
 import { uniAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
-import {pageAnimation} from '../animation';
-
+import {useOnScrollAnimation} from "../useOnScrollAnimation";
+import {
+  pageAnimation,
+  textAnimation,
+  leftToRightAnimation,
+  buttonAnimation,
+  photoAnimation,
+  rightToLeftAnimation,
+} from "../animation";
 
 const Home = () => {
   const secondRef = useRef(null);
@@ -27,31 +34,43 @@ const Home = () => {
   };
 
   return (
-    <motion.div variants={pageAnimation} initial="hidden" animate="visable" className="home-container">
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="visable"
+      exit="out"
+      className="home-container"
+    >
       {/* first */}
       {/* first */}
       {/* first */}
       <div>
-        <div></div>
-        <p style={{ lineHeight: 2.5 }}>
-          Hello there.
+        <motion.div variants={leftToRightAnimation}></motion.div>
+        <motion.div
+          className="introduction-uni-head z-50"
+          style={{ lineHeight: 2.5 }}
+          variants={{hidden:{},visable:{transition:{staggerChildren:0.3}}}}
+        >
+          <div><motion.h3 variants={textAnimation}>Hello there.</motion.h3></div>
           <br />
-          I am Atefeh Hassani.
+          <div><motion.h3 variants={textAnimation}>I am Atefeh Hassani.</motion.h3></div>
           <br />
-          An <span className="text-blue-600">AeroSpace</span> engineer.
-        </p>
-        <img src="/media/uni/firstuni.png" />
-        <button onClick={knowMeBtnHandler}>
+          <div><motion.h3 variants={textAnimation}>
+            An <span className="text-blue-600">AeroSpace</span> engineer.
+          </motion.h3></div>
+        </motion.div>
+        <motion.img variants={photoAnimation} src="/media/uni/firstuni.png" />
+        <motion.button variants={buttonAnimation} onClick={knowMeBtnHandler}>
           Know me better{" "}
           <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />
-        </button>
+        </motion.button>
       </div>
 
       {/* second */}
       {/* second */}
       {/* second */}
       <div ref={secondRef}>
-        <div></div>
+        <motion.div variants={rightToLeftAnimation}></motion.div>
         <img src="/media/uni/seconduni.png" />
         <div className="text-and-title">
           <p className="" style={{ lineHeight: 1.5 }}>

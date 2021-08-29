@@ -3,7 +3,7 @@ import {pageAnimation} from '../animation';
 
 const Biography = () => {
   return (
-    <motion.div variants={pageAnimation} initial="hidden" animate="visable" className="flex flex-col justify-center items-center">
+    <motion.div variants={pageAnimation} initial="hidden" animate="visable" exit="out" className="flex flex-col justify-center items-center">
       {/* first */}
       {/* first */}
       {/* first */}

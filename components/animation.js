@@ -64,6 +64,21 @@ export const rightToLeftAnimation = {
     transition: { duration: 0.5 },
   },
 };
+
+
+export const lineAnimation = {
+  hidden: {
+    width: "0%",
+    opacity: 0,
+  },
+  visable: {
+    transition: { duration: 2, ease: "easeOut" },
+    width: "",
+    opacity: 1,
+  },
+}
+
+
 //home
 //home
 //home

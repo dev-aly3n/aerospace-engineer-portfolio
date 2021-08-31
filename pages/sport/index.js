@@ -6,8 +6,7 @@ export default function sport() {
   return (
     <Fragment>
       <Head>
-        <link rel="preload" as="image" href="/media/uni/unifirst.png" />
-        <link rel="preload" as="image" href="/media/art/artfirst.jpg" />
+
         <link rel="preload" as="image" href="/media/sport/sportfirst.png" />
       </Head>
       <Sport />

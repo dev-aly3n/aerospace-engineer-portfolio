@@ -13,6 +13,7 @@ import {
   photoAnimation,
   rightToLeftAnimation,
   sectionAnimation,
+  lineAnimation,
 } from "../animation";
 
 const Home = () => {
@@ -158,7 +159,7 @@ const Home = () => {
         className="achievement"
       >
         <h2 ref={achieveRef}>My Achievements</h2>
-        <motion.div></motion.div>
+        <motion.div variants={lineAnimation}></motion.div>
         <AnimateSharedLayout>
           <motion.ul layout className="achieve-list-container">
             {uniAchievementData[0] &&

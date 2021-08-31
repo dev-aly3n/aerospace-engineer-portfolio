@@ -79,7 +79,7 @@ const Home = () => {
             </motion.h3>
           </div>
         </motion.div>
-        <motion.img variants={photoAnimation} src="/media/uni/firstuni.png" />
+        <motion.img variants={photoAnimation} src="/media/uni/unifirst.png" />
         <motion.button
           ref={secondRef}
           variants={buttonAnimation}
@@ -100,7 +100,7 @@ const Home = () => {
         ref={sec2}
       >
         <motion.div variants={rightToLeftAnimation}></motion.div>
-        <motion.img variants={photoAnimation} src="/media/uni/seconduni.png" />
+        <motion.img variants={photoAnimation} src="/media/uni/unisecond.png" />
         <div className="text-and-title">
           <motion.p variants={textAnimation} style={{ lineHeight: 1.5 }}>
             I <span className="text-green-600">working</span> on UAVs
@@ -141,7 +141,7 @@ const Home = () => {
             ect...
           </motion.p>
         </div>
-        <motion.img variants={photoAnimation} src="/media/uni/thirduni.jpg" />
+        <motion.img variants={photoAnimation} src="/media/uni/unithird.jpg" />
         <motion.button variants={buttonAnimation} onClick={learnMoreBtnHandler}>
           Learn more...{" "}
           <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />

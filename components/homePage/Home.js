@@ -158,7 +158,7 @@ const Home = () => {
         className="achievement"
       >
         <h2 ref={achieveRef}>My Achievements</h2>
-        <div></div>
+        <motion.div></motion.div>
         <AnimateSharedLayout>
           <motion.ul layout className="achieve-list-container">
             {uniAchievementData[0] &&

@@ -22,8 +22,8 @@
       }
       > button {
         @apply absolute bottom-7 left-20 sm:left-28 md:left-44 text-gray-800 bg-blue-500 p-3 rounded-2xl text-xl font-bold
-                hover:bg-blue-600 hover:text-white hover:scale-105 duration-500 active:bg-blue-900 ring-2 ring-white shadow-inner;
-      }
+                hover:bg-blue-600 hover:text-white !transform hover:scale-105 duration-500 active:bg-blue-900 ring-2 ring-white shadow-inner;
+              }
     }
     > div:nth-child(2) {
       @apply relative flex flex-col-reverse md:flex-row justify-around items-center py-5 rounded-md md:mt-14;
@@ -56,7 +56,7 @@
       }
       > button {
         @apply absolute bottom-7  sm:left-28 md:left-44 text-gray-800 bg-blue-500 p-3 rounded-2xl text-xl font-bold
-                hover:bg-blue-600 hover:text-white hover:scale-105 duration-500 active:bg-blue-900 ring-2 ring-white shadow-inner;
+                hover:bg-blue-600 hover:text-white !transform hover:scale-105 duration-500 active:bg-blue-900 ring-2 ring-white shadow-inner;
       }
     }
   }

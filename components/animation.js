@@ -135,3 +135,61 @@ export const sectionAnimation = {
     },
   },
 };
+
+
+
+// sport
+// sport
+// sport
+
+export const twAnimation = {
+  hidden:{
+    opacity:0,
+    x:300,
+  },
+  visable: (custom) => ({
+    opacity:1,
+    x:0,
+    transition:{duration:0.9, delay:custom*0.15}
+  }) 
+}
+
+export const sportImgAnimation = {
+  hidden:{
+    opacity:0,
+    x:400,
+  },
+  visable: {
+    opacity:1,
+    x:0,
+    transition:{duration:10, ease:[0,1.1,0,.91]}
+  }
+}
+
+export const sportPhotoAnimation = {
+  hidden: {
+    scale: 1.15,
+    opacity: 0,
+  },
+  visable: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 0.5, delay:1.5 },
+  },
+};
+
+export const borderAnimation = {
+  hidden:{
+    opacity:0,
+    scale:1.1,
+    borderTopWidth:0,
+    borderRightWidth:0,
+  },
+  visable:{
+    opacity:1,
+    scale:1,
+    borderTopWidth:"4px",
+    borderRightWidth:"8px",
+    transition:{duration:1}
+  }
+}

@@ -7,11 +7,9 @@
         @apply absolute top-10 left-3 sm:left-10 lg:left-36 xl:left-52 h-[469px] bg-yellow-400 w-full;
       }
       > div:last-of-type {
-        @apply z-10 flex xl:gap-x-20;
+        @apply z-10 flex flex-row-reverse xl:gap-x-20;
         > p {
-          writing-mode: vertical-lr;
-          text-orientation: upright;
-          @apply z-10 text-[35px] font-black -mt-16;
+          @apply z-10 text-[33px] font-black -mt-16 flex flex-col items-center;
         }
         > img {
           @apply h-[300px] z-10 hidden md:block;
@@ -22,7 +20,7 @@
       }
     }
     > div:nth-child(2) {
-      @apply flex flex-col-reverse md:flex-row relative w-full justify-evenly items-center mt-32;
+      @apply flex flex-col md:flex-row-reverse relative w-full justify-evenly items-center mt-32;
       > div:first-of-type {
         @apply absolute top-10 right-5 sm:right-10 lg:right-20 xl:right-44 h-[400px] bg-gray-900 w-full;
       }
@@ -31,7 +29,7 @@
         @apply ssm:h-[500px] z-10 border-r-8 border-t-4 rounded-3xl mt-7;
       }
       > div:last-of-type {
-        @apply flex flex-col text-white sm:w-[480px]  ml-5 mr-5 ssm:mr-12 z-10;
+        @apply flex flex-col text-white sm:w-[480px]  ml-5 mr-5 ssm:mr-12 z-10 overflow-y-hidden;
         > p:first-of-type {
           @apply mt-20 md:mt-0 text-2xl sm:text-3xl lg:text-[35px] font-black;
         }
@@ -45,8 +43,8 @@
       > div:first-of-type {
         @apply absolute top-10 left-5 sm:left-10 lg:left-24 xl:left-48 h-[420px] lg:h-[500px] bg-gray-900 w-full;
       }
-      > p {
-        @apply z-10 text-2xl lg:text-4xl text-white sm:w-[450px] font-black mt-16 ml-8 sm:ml-14 lg:ml-32 xl:ml-44 pr-5;
+      > div:last-of-type {
+        @apply z-10 text-2xl lg:text-4xl text-white sm:w-[450px] font-black mt-16 ml-8 sm:ml-14 lg:ml-32 xl:ml-44 pr-5 overflow-y-hidden;
       }
       button {
         @apply text-blue-300 hover:scale-105 duration-700 hover:text-blue-600 font-black;

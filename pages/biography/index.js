@@ -12,7 +12,7 @@ export default function biography() {
           href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap"
           rel="stylesheet"
         />
-
+              
         <link rel="preload" as="image" href="/media/uni/unifirst.png" />
         <link rel="preload" as="image" href="/media/art/artfirst.jpg" />
         <link rel="preload" as="image" href="/media/sport/sportfirst.png" />

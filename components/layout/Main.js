@@ -6,7 +6,7 @@ const Main = (props) => {
   return (
     <AnimatePresence exitBeforeEnter>
       <motion.main
-        className="bg-black w-full overflow-hidden"
+        className="w-full overflow-hidden"
         key={router.pathname}
       >
         {props.children}

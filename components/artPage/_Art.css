@@ -60,7 +60,7 @@
       }
     }
     > div:nth-of-type(3) {
-      @apply flex flex-col ssm:flex-row justify-center items-center bg-blue-50 h-full mx-auto w-10/12 relative mt-20;
+      @apply flex flex-col ssm:flex-row justify-center items-center bg-blue-50 h-full mx-auto w-10/12 relative mt-20 mb-10;
       > div:first-child {
         @apply w-[400px] self-start mt-32 hidden md:block;
       }

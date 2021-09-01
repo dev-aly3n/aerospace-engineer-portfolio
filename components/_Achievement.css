@@ -22,7 +22,7 @@
   }
 
   .achievement {
-    @apply w-full flex flex-col justify-center items-center mt-32;
+    @apply w-full flex flex-col justify-center items-center mt-32 relative z-50;
     > h2 {
       @apply text-3xl text-white;
     }

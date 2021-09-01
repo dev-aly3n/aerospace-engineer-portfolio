@@ -15,6 +15,7 @@ import {
   sectionAnimation,
   lineAnimation,
 } from "../animation";
+import UniWave from "./UniWave";
 
 const Home = () => {
   const [sec1, controls1] = useOnScrollAnimation();
@@ -58,6 +59,7 @@ const Home = () => {
         ref={sec1}
       >
         <motion.div variants={leftToRightAnimation}></motion.div>
+      <UniWave />
         <motion.div
           className="introduction-uni-head z-50"
           style={{ lineHeight: 2.5 }}

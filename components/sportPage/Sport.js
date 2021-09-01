@@ -2,7 +2,7 @@ import { AnimateSharedLayout, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import { sportAchievementData } from "../achievementData";
-import { useRef } from "react";
+import { Fragment, useRef } from "react";
 import Achievement from "../Achievement";
 import { useOnScrollAnimation } from "../useOnScrollAnimation";
 import {
@@ -19,6 +19,7 @@ import {
   sportPhotoAnimation,
   borderAnimation,
 } from "../animation";
+import SportWave from "./SportWave";
 
 const Sport = () => {
   const [sec1, controls1] = useOnScrollAnimation();

@@ -21,7 +21,7 @@ const headerLinks = [
 
 const Header = () => {
   return (
-      <div className="h-full w-full flex flex-col sm:flex-row justify-evenly items-center bg-gray-900">
+      <div className="h-full w-full flex flex-col sm:flex-row justify-evenly items-center bg-gray-900 z-50 relative">
         <h1
           className="text-xl sm:text-2xl md:text-3xl pt-2 whitespace-nowrap text-white"
           style={{ fontFamily: "'Berkshire Swash', cursive" }}

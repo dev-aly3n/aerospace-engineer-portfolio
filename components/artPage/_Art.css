@@ -1,4 +1,11 @@
 @layer components {
+  .art-transition-elements {
+    > div {
+      z-index: 60;
+      @apply fixed w-screen h-screen top-0 left-0;
+    }
+  }
+
   .art-container {
     @apply w-full h-full flex flex-col bg-blue-50;
     > div:nth-of-type(1) {

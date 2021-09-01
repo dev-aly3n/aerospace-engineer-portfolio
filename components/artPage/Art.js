@@ -41,24 +41,22 @@ const Art = () => {
   return (
     <Fragment>
       <motion.div
+        className="art-transition-elements"
         variants={artTranAnimationContainer}
         initial="hidden"
         animate="visable"
       >
         <motion.div
           variants={artTranAnimation}
-          className="fixed w-screen h-screen top-0 left-0 bg-green-300"
-          style={{ zIndex: 60 }}
+          className="bg-green-300"
         ></motion.div>
         <motion.div
           variants={artTranAnimation}
-          className="fixed w-screen h-screen top-0 left-0 bg-pink-300"
-          style={{ zIndex: 60 }}
+          className="bg-pink-300"
         ></motion.div>
         <motion.div
           variants={artTranAnimation}
-          className="fixed w-screen h-screen top-0 left-0 bg-yellow-300"
-          style={{ zIndex: 60 }}
+          className="bg-yellow-300"
         ></motion.div>
       </motion.div>
       <motion.div
@@ -71,7 +69,12 @@ const Art = () => {
         {/* first */}
         {/* first */}
         {/* first */}
-        <motion.div ref={sec1} animate={controls1} initial="hidden" variants={sectionAnimation}>
+        <motion.div
+          ref={sec1}
+          animate={controls1}
+          initial="hidden"
+          variants={sectionAnimation}
+        >
           <motion.div variants={leftToRightAnimation} className="peer">
             <p> Daf is fun</p>
             <div>
@@ -175,14 +178,26 @@ const Art = () => {
         {/* third */}
         {/* third */}
         {/* third */}
-        <motion.div variants={sectionAnimation} ref={sec3} animate={controls3} initial="hidden">
+        <motion.div
+          variants={sectionAnimation}
+          ref={sec3}
+          animate={controls3}
+          initial="hidden"
+        >
           <div>
-            <motion.img variants={photoAnimation} src="media/art/artthird.png" alt="" />
+            <motion.img
+              variants={photoAnimation}
+              src="media/art/artthird.png"
+              alt=""
+            />
           </div>
           <div>
             <div ref={achieveRef} className="achievement ">
               <h2 className="!text-black !font-bold">My Achievements</h2>
-              <motion.div variants={lineAnimation} className="!bg-black"></motion.div>
+              <motion.div
+                variants={lineAnimation}
+                className="!bg-black"
+              ></motion.div>
               <AnimateSharedLayout>
                 <motion.ul layout className="achieve-list-container !w-full ">
                   {artAchievementData[0] &&

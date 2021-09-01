@@ -1,26 +1,25 @@
-import {motion} from 'framer-motion';
-import {pageAnimation} from '../animation';
+import { motion } from "framer-motion";
+import { bioPhotoAnimation, pageAnimation } from "../animation";
 
 const Biography = () => {
   return (
-    <motion.div variants={pageAnimation} initial="hidden" animate="visable" exit="out" className="flex flex-col justify-center items-center">
+    <motion.div
+      variants={pageAnimation}
+      initial="hidden"
+      animate="visable"
+      exit="out"
+      className="bio-container"
+    >
       {/* first */}
       {/* first */}
       {/* first */}
-      <div className="w-full h-full relative">
-        <img
+      <div>
+        <motion.img
+          variants={bioPhotoAnimation}
           src="/media/life/lifefirst.jpg"
-          className="  min-h-screen lg:h-full object-cover object-midleft lg:object-center duration-2000"
         />
-        <div className="w-full h-full absolute left-0 top-0 bg-black/10"></div>
-        <div
-          className="absolute left-[20%] md:left-auto md:right-[10%] lg:right-1/4 xl:right-1/4
-           bottom-16 md:bottom-auto md:top-20 xl:top-20
-        text-3xl md:text-4xl xl:text-5xl md:gap-y-5 xl:gap-y-10 text-pink-800 font-black 
-        px-2 py-1 flex flex-col justify-center items-center
-         hover:scale-125 duration-3000 animate-pulse select-none"
-          style={{ fontFamily: "'Rampart One', cursive" }}
-        >
+        <div></div>
+        <div>
           <span>My</span> <span>Dream</span> <span>IS</span>
           <span>To</span> <span>Fly...</span>
         </div>
@@ -28,18 +27,42 @@ const Biography = () => {
       {/* second */}
       {/* second */}
       {/* second */}
-      <div className="text-white w-1/2 mt-32 mb-20">
-        <h3 className="text-4xl font-black">My name is Atefeh hasani</h3>
-        <p className="text-lg mt-5">
-          I born in 1999 at Tehran. I born in 1999 at Tehran.I born in 1999 at
-          Tehran.I born in 1999 at Tehran. I born in 1999 at Tehran.I born in
-          1999 at Tehran.I born in 1999 at Tehran.I born in 1999 at Tehran.I
-          born in 1999 at Tehran.I born in 1999 at Tehran.I born in 1999 at
-          Tehran.I born in 1999 at Tehran.I born in 1999 at Tehran.I born in
-          1999 at Tehran.I born in 1999 at Tehran.I born in 1999 at Tehran.I
-          born in 1999 at Tehran.I born in 1999 at Tehran.I born in 1999 at
-          Tehran.I born in 1999 at Tehran.I born in 1999 at Tehran.I born in
-          1999 at Tehran.{" "}
+      <div>
+        <h3>Atefeh hasani</h3>
+        <p>
+          Atefeh Hasani was born in 1999 at Tehran/Iran.she grown up in a nice
+          family and went to high-scholl. It was the first place that she
+          started 3 journy in her life. Taekwondo, Daf and thinking about
+          Aerospace.
+        </p>
+        <p>
+          She was new to all of them but her mother helped her to train and
+          train and train to be a professinal musician and athlete.
+        </p>
+        <br />
+        <p>
+          After Entring University, young happy Atefeh was so excited so She
+          started searching for anything she can discover in Aerospace.
+        </p>
+        <p>
+          Atefeh found her hobbies at the very first days in university. she
+          found a tech-group to work with. the work was so exciting and it was
+          about Drones. she involved in a proccess to build some drones , some
+          new drones.
+        </p>
+        <p>
+          She also found a scintific magzine aka ASPAD. she worked in ASPAD as
+          an editor and writer. her article about airplane engines was the most
+          popular article in{" "}
+          <a href="https://aspadmag.ir/?p=215" target="_blank">
+            ASPAD website
+          </a>
+          .
+        </p>
+        <p>
+          And now after all she study hard and still works on her skills. she
+          started to learn Python and decided to be a professional programmer as
+          well.
         </p>
       </div>
     </motion.div>

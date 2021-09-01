@@ -35,7 +35,7 @@ export const pageAnimation2 = {
       duration: 0.5,
       when: "beforeChildren",
       staggerChildren: 0.5,
-      delay:0.7
+      delay: 0.7,
     },
   },
   out: {
@@ -87,7 +87,6 @@ export const rightToLeftAnimation = {
   },
 };
 
-
 export const lineAnimation = {
   hidden: {
     width: "0%",
@@ -98,8 +97,7 @@ export const lineAnimation = {
     width: "",
     opacity: 1,
   },
-}
-
+};
 
 //home
 //home
@@ -158,35 +156,33 @@ export const sectionAnimation = {
   },
 };
 
-
-
 // sport
 // sport
 // sport
 
 export const twAnimation = {
-  hidden:{
-    opacity:0,
-    x:300,
+  hidden: {
+    opacity: 0,
+    x: 300,
   },
   visable: (custom) => ({
-    opacity:1,
-    x:0,
-    transition:{duration:0.9, delay:custom*0.15}
-  }) 
-}
+    opacity: 1,
+    x: 0,
+    transition: { duration: 0.9, delay: custom * 0.15 },
+  }),
+};
 
 export const sportImgAnimation = {
-  hidden:{
-    opacity:0,
-    x:400,
+  hidden: {
+    opacity: 0,
+    x: 400,
   },
   visable: {
-    opacity:1,
-    x:0,
-    transition:{duration:10, ease:[0,1.1,0,.91]}
-  }
-}
+    opacity: 1,
+    x: 0,
+    transition: { duration: 10, ease: [0, 1.1, 0, 0.91] },
+  },
+};
 
 export const sportPhotoAnimation = {
   hidden: {
@@ -196,50 +192,70 @@ export const sportPhotoAnimation = {
   visable: {
     scale: 1,
     opacity: 1,
-    transition: { duration: 0.5, delay:1.5 },
+    transition: { duration: 0.5, delay: 1.5 },
   },
 };
 
 export const borderAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 1.1,
+    borderTopWidth: 0,
+    borderRightWidth: 0,
+  },
+  visable: {
+    opacity: 1,
+    scale: 1,
+    borderTopWidth: "4px",
+    borderRightWidth: "8px",
+    transition: { duration: 1 },
+  },
+};
+
+//ART
+//ART
+//ART
+
+export const artTranAnimation = {
+  hidden: {
+    x: "-130%",
+    skew: "45deg",
+  },
+  visable: {
+    x: "100%",
+    skew: "0deg",
+    transition: { duration: 1, ease: "easeOut" },
+  },
+};
+
+export const artTranAnimationContainer = {
+  hidden: {},
+  visable: {
+    transition: {
+      when: "beforeChildren",
+      staggerChildren: 0.2,
+      ease: "easeOut",
+      delay: 0,
+    },
+  },
+};
+
+
+//biography
+//biography
+//biography
+
+export const bioPhotoAnimation = {
   hidden:{
     opacity:0,
-    scale:1.1,
-    borderTopWidth:0,
-    borderRightWidth:0,
+    scale:1.5
   },
   visable:{
     opacity:1,
     scale:1,
-    borderTopWidth:"4px",
-    borderRightWidth:"8px",
-    transition:{duration:1}
-  }
-}
-
-
-
-
-//ART 
-//ART 
-//ART 
-
-
-export const artTranAnimation = {
-  hidden:{
-    x:"-130%",
-    skew:"45deg",
-  },
-  visable:{
-    x:"100%",
-    skew:"0deg",
-    transition:{duration:1, ease:"easeOut"},
-  }
-}
-
-export const artTranAnimationContainer = {
-  hidden:{
-  },
-  visable:{
-    transition:{when: "beforeChildren", staggerChildren:0.2, ease:"easeOut", delay:0}
+    transition:{
+      duration:0.1,
+      ease:"easeOut"
+    }
   }
 }

@@ -1,13 +1,26 @@
+import { useRouter } from "next/router";
+import { useState, useEffect } from "react";
 const Footer = () => {
+  const router = useRouter();
+  const [footerState, setFooterState] = useState(false);
+
+  //the art page background is light blue, so we need to hide the black area of main background
+  useEffect(() => {
+    if (router.pathname === "/art") {
+      setFooterState(true);
+    } else {
+      setFooterState(false);
+    }
+  }, [router.pathname]);
   return (
-    <div className=" z-50 relative overflow-hidden">
+    <div className="footer-container">
       <svg
-        className="h-[500px]"
         id="wave"
         style={{ transform: "rotate(0deg); transition: 0.3s" }}
-        viewBox="0 0 1440 470"
+        viewBox="0 0 2560 470"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
+        className={`${footerState ? "-mt-44" : ""}`}
       >
         <defs>
           <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">
@@ -52,9 +65,9 @@ const Footer = () => {
           d="M0,141L60,117.5C120,94,240,47,360,54.8C480,63,600,125,720,148.8C840,172,960,157,1080,133.2C1200,110,1320,78,1440,117.5C1560,157,1680,266,1800,305.5C1920,345,2040,313,2160,282C2280,251,2400,219,2520,172.3C2640,125,2760,63,2880,101.8C3000,141,3120,282,3240,329C3360,376,3480,329,3600,282C3720,235,3840,188,3960,164.5C4080,141,4200,141,4320,188C4440,235,4560,329,4680,305.5C4800,282,4920,141,5040,109.7C5160,78,5280,157,5400,211.5C5520,266,5640,298,5760,321.2C5880,345,6000,360,6120,368.2C6240,376,6360,376,6480,368.2C6600,360,6720,345,6840,313.3C6960,282,7080,235,7200,250.7C7320,266,7440,345,7560,376C7680,407,7800,392,7920,321.2C8040,251,8160,125,8280,125.3C8400,125,8520,251,8580,313.3L8640,376L8640,470L8580,470C8520,470,8400,470,8280,470C8160,470,8040,470,7920,470C7800,470,7680,470,7560,470C7440,470,7320,470,7200,470C7080,470,6960,470,6840,470C6720,470,6600,470,6480,470C6360,470,6240,470,6120,470C6000,470,5880,470,5760,470C5640,470,5520,470,5400,470C5280,470,5160,470,5040,470C4920,470,4800,470,4680,470C4560,470,4440,470,4320,470C4200,470,4080,470,3960,470C3840,470,3720,470,3600,470C3480,470,3360,470,3240,470C3120,470,3000,470,2880,470C2760,470,2640,470,2520,470C2400,470,2280,470,2160,470C2040,470,1920,470,1800,470C1680,470,1560,470,1440,470C1320,470,1200,470,1080,470C960,470,840,470,720,470C600,470,480,470,360,470C240,470,120,470,60,470L0,470Z"
         ></path>
       </svg>
-      <div className="text-white absolute bottom-24 left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center">
-        <h3 className="text-2xl font-bold">Contact</h3>
-        <ul className="w-80 flex flex-wrap justify-around text-xl">
+      <div className="contact-container">
+        <h3>Contact</h3>
+        <ul>
           <li>
             <a target="_blank">Email</a>
           </li>

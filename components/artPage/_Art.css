@@ -1,12 +1,12 @@
 @layer components {
   .art-container {
     @apply w-full h-full flex flex-col bg-blue-50;
-    > div:nth-child(1) {
+    > div:nth-of-type(1) {
       @apply flex flex-col ssm:flex-row justify-between bg-pink-100 overflow-hidden shadow-lg;
       > div:first-child {
         color: #307393;
         @apply h-52 -mb-12 ssm:h-auto ssm:w-1/2 md:w-7/12 flex justify-center items-center
-        text-4xl sm:text-5xl md:text-7xl font-black relative hover:scale-110 duration-1000;
+        text-4xl sm:text-5xl md:text-7xl font-black relative !transform hover:scale-110 duration-1000;
         > div {
           @apply absolute flex gap-x-7 justify-evenly w-screen top-6 ssm:top-10 sm:top-20 md:top-32 lg:top-44 xl:top-64;
           > img {
@@ -15,7 +15,7 @@
         }
       }
       > div:last-child {
-        @apply relative ssm:w-1/2 md:w-5/12 h-full duration-2000 shadow-lg cursor-pointer;
+        @apply relative ssm:w-1/2 md:w-5/12 h-full duration-2000 shadow-lg cursor-pointer bg-pink-100;
         > .play-btn {
           @apply absolute flex justify-center items-center w-full h-full text-7xl text-pink-100/75 z-10;
           .font-icon-class {
@@ -27,11 +27,11 @@
         }
 
         > video {
-          @apply w-10/12 m-auto ssm:w-full h-full filter contrast-75 shadow-2xl rounded-md ssm:rounded-none duration-1500;
+          @apply w-10/12 m-auto !transform ssm:w-full h-full filter contrast-75 shadow-2xl rounded-md ssm:rounded-none duration-1500;
         }
       }
     }
-    > div:nth-child(2) {
+    > div:nth-of-type(2) {
       @apply flex flex-col justify-center items-center h-full mt-32 mx-auto w-11/12 ssm:w-10/12;
       > h3 {
         @apply text-3xl font-bold self-start mb-8 md:mb-0;
@@ -52,7 +52,7 @@
         }
       }
     }
-    > div:nth-child(3) {
+    > div:nth-of-type(3) {
       @apply flex flex-col ssm:flex-row justify-center items-center bg-blue-50 h-full mx-auto w-10/12 relative mt-20;
       > div:first-child {
         @apply w-[400px] self-start mt-32 hidden md:block;

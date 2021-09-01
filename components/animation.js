@@ -22,6 +22,28 @@ export const pageAnimation = {
     transition: { duration: 0.5 },
   },
 };
+export const pageAnimation2 = {
+  hidden: {
+    opacity: 0,
+    y: 10,
+  },
+
+  visable: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      when: "beforeChildren",
+      staggerChildren: 0.5,
+      delay:0.7
+    },
+  },
+  out: {
+    opacity: 0,
+    y: 100,
+    transition: { duration: 0.5 },
+  },
+};
 
 export const leftToRightAnimation = {
   hidden: {
@@ -191,5 +213,33 @@ export const borderAnimation = {
     borderTopWidth:"4px",
     borderRightWidth:"8px",
     transition:{duration:1}
+  }
+}
+
+
+
+
+//ART 
+//ART 
+//ART 
+
+
+export const artTranAnimation = {
+  hidden:{
+    x:"-130%",
+    skew:"45deg",
+  },
+  visable:{
+    x:"100%",
+    skew:"0deg",
+    transition:{duration:1, ease:"easeOut"},
+  }
+}
+
+export const artTranAnimationContainer = {
+  hidden:{
+  },
+  visable:{
+    transition:{when: "beforeChildren", staggerChildren:0.2, ease:"easeOut", delay:0}
   }
 }

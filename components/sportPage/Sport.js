@@ -43,7 +43,7 @@ const Sport = () => {
       exit="out"
       className="sport-container relative"
     >
-          <SportWave />
+          <SportWave controls1={controls1} />
 
       {/* first */}
       {/* first */}

@@ -182,8 +182,6 @@ export const photoAnimation = {
   },
 };
 
-
-
 // sport
 // sport
 // sport
@@ -268,22 +266,44 @@ export const artTranAnimationContainer = {
   },
 };
 
-
 //biography
 //biography
 //biography
 
 export const bioPhotoAnimation = {
-  hidden:{
-    opacity:0,
-    scale:1.5
+  hidden: {
+    opacity: 0,
+    scale: 1.5,
   },
-  visable:{
-    opacity:1,
-    scale:1,
-    transition:{
-      duration:0.3,
-      ease:"easeOut"
-    }
+  visable: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.3,
+      ease: "easeOut",
+    },
+  },
+};
+
+// uniwave
+// uniwave
+// uniwave
+export const uniwaveAnimation = {
+  hidden: { pathLength: 0, pathOffset: 1 },
+  visable: {
+    pathLength: 1,
+    pathOffset: 0,
+    transition: { duration: 3.5, delay: 0 },
+  },
+};
+// sportwave
+// sportwave
+// sportwave
+export const sportwaveAnimation = {
+  hidden: { pathLength: 0, pathOffset: 1 },
+  visable: {
+    pathLength: 1,
+    pathOffset: 0,
+    transition: { duration: 30, delay: 0, ease:[.12,.35,.9,1.05]},
   }
-}
+};

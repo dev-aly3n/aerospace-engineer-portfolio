@@ -59,7 +59,7 @@ const Home = () => {
         ref={sec1}
       >
         <motion.div variants={leftToRightAnimation}></motion.div>
-      <UniWave />
+        <UniWave controls1={controls1} />
         <motion.div
           className="introduction-uni-head z-50"
           style={{ lineHeight: 2.5 }}

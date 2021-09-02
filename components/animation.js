@@ -13,7 +13,7 @@ export const pageAnimation = {
     transition: {
       duration: 0.75,
       when: "beforeChildren",
-      staggerChildren: 1,
+      staggerChildren: 0.7,
     },
   },
   out: {
@@ -42,6 +42,23 @@ export const pageAnimation2 = {
     opacity: 0,
     y: 100,
     transition: { duration: 0.5 },
+  },
+};
+
+export const sectionAnimation = {
+  hidden: {
+    opacity: 0,
+    scale: 1.1,
+  },
+  visable: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+      when: "beforeChildren",
+      staggerChildren: 0.6,
+    },
   },
 };
 
@@ -138,23 +155,7 @@ export const photoAnimation = {
   },
 };
 
-export const sectionAnimation = {
-  hidden: {
-    opacity: 0.7,
-    scale: 1.1,
-    transition: { duration: 1 },
-  },
-  visable: {
-    opacity: 1,
-    scale: 1,
-    transition: {
-      duration: 0.1,
-      ease: "easeInOut",
-      when: "beforeChildren",
-      staggerChildren: 0.75,
-    },
-  },
-};
+
 
 // sport
 // sport

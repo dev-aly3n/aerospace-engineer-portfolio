@@ -21,7 +21,7 @@ const Achievement = ({ achieve, light }) => {
         <FontAwesomeIcon
           icon={faAngleRight}
           className={` transform  duration-700 ${expand ? "rotate-90 " : ""}`}
-        />{" "}
+        />
         {achieve.title}
       </motion.h3>
       {expand && (
@@ -33,18 +33,14 @@ const Achievement = ({ achieve, light }) => {
           className="expand-div"
         >
           <p className={`${light ? "!text-black" : ""}`}>{achieve.desc}</p>
-            {achieve.image ? (
-              <img  src={achieve.image} />
-            ) : (
-              <video
-                controls
-                preload="none"
-                poster={achieve.poster}
-              >
-                <source src={achieve.video} type="video/mp4" />
-                Your browser doesn't suport video!
-              </video>
-            )}
+          {achieve.image ? (
+            <img src={achieve.image} />
+          ) : (
+            <video controls width="500" preload="none" poster={achieve.poster}>
+              <source src={achieve.video} type="video/mp4" />
+              Your browser doesn't suport video!
+            </video>
+          )}
         </motion.div>
       )}
       <div className={`${light ? "!bg-black" : ""}`}></div>

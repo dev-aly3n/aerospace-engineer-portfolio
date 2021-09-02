@@ -10,10 +10,10 @@
         @apply text-[0.85rem] md:text-base mb-3 text-white;
       }
       > img {
-        @apply block max-w-[500px] self-center;
+        @apply block w-[500px] self-center;
       }
       > video {
-        @apply block self-center max-w-[500px];
+        @apply block self-center w-[500px];
       }
     }
     > div:last-child {

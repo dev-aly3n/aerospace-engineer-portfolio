@@ -13,7 +13,7 @@ export const pageAnimation = {
     transition: {
       duration: 0.75,
       when: "beforeChildren",
-      staggerChildren: 0.5,
+      staggerChildren: 1,
     },
   },
   out: {
@@ -151,7 +151,7 @@ export const sectionAnimation = {
       duration: 0.1,
       ease: "easeInOut",
       when: "beforeChildren",
-      staggerChildren: 0.5,
+      staggerChildren: 0.75,
     },
   },
 };

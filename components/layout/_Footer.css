@@ -1,13 +1,15 @@
 @layer components {
   .footer-container {
     z-index: 60;
-    @apply relative overflow-hidden;
-    > svg:first-child {
-      z-index: 60;
-      @apply h-[480px];
+    @apply relative overflow-hidden flex justify-center items-center;
+    > div:first-child {
+      > svg:first-child {
+        z-index: 60;
+        @apply h-[480px];
+      }
     }
     .contact-container {
-      @apply text-white absolute bottom-24 left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center;
+      @apply text-white absolute bottom-20 left-1/2 transform -translate-x-1/2 flex flex-col justify-center items-center;
       > h3 {
         @apply text-2xl font-bold;
       }

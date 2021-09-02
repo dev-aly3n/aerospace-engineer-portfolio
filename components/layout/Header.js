@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const headerLinks = [
   {
@@ -20,6 +21,7 @@ const headerLinks = [
 ];
 
 const Header = () => {
+  const router = useRouter();
   return (
       <div className="h-full w-full flex flex-col sm:flex-row justify-evenly items-center bg-gray-900 relative" style={{zIndex:100}}>
         <h1
@@ -31,10 +33,10 @@ const Header = () => {
         <ul className="flex justify-center items-stretch sm:text-xl font-bold">
           {headerLinks.map((headLink) => {
             return (
-              <li>
+              <li key={headLink.text}>
                 <Link href={headLink.ref}>
-                  <a className="text-white  hover:bg-gray-100
-                   hover:text-black px-3 md:px-6 lg:px-10 py-3 md:py-5 block duration-700">
+                  <a className={`${router.pathname === headLink.ref ? "bg-gray-100 text-gray-900":"text-white"}   hover:bg-gray-100
+                   hover:text-black px-3 md:px-6 lg:px-10 py-3 md:py-5 block duration-700`}>
                     {headLink.text}
                   </a>
                 </Link>

@@ -2,7 +2,7 @@
   .achievement-container {
     @apply flex flex-col justify-center items-start w-full;
     > h3 {
-      @apply text-xl md:text-2xl text-gray-200 font-semibold w-full hover:text-blue-200 cursor-pointer;
+      @apply text-lg md:text-xl text-gray-200 font-bold w-full hover:text-blue-200 cursor-pointer;
     }
     .expand-div {
       @apply flex flex-col justify-center items-start mx-auto mt-2 md:mt-10 min-h-[200px] md:min-h-[500px] w-11/12;
@@ -10,10 +10,10 @@
         @apply text-[0.85rem] md:text-base mb-3 text-white;
       }
       > img {
-        @apply block w-[500px] self-center;
+        @apply block max-w-[500px] self-center;
       }
       > video {
-        @apply block self-center w-[500px];
+        @apply block self-center max-w-[500px];
       }
     }
     > div:last-child {

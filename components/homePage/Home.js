@@ -166,7 +166,7 @@ const Home = () => {
           <motion.ul layout className="achieve-list-container">
             {uniAchievementData[0] &&
               uniAchievementData.map((uniachieve) => {
-                return <Achievement achieve={uniachieve} />;
+                return <Achievement key={uniachieve.id} achieve={uniachieve} />;
               })}
           </motion.ul>
         </AnimateSharedLayout>

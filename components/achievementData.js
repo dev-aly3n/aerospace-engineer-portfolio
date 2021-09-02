@@ -1,74 +1,101 @@
-
 export const uniAchievementData = [
-    {
-        image: "/media/uni/uniachieve1.jpg",
-        title: "thanks of Aerospace scintific assosiation for helding Solidworks competetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        image: "/media/uni/uniachieve2.jpg",
-        title: "thanks of Aerospace scintific",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        image: "/media/uni/uniachieve1.jpg",
-        title: "thanks of Aerospace scintific assosiation for helding Solidworks competetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        poster: "media/uni/poster3.jpg" ,
-        video: "/media/uni/uniachieve3.mp4",
-        title: "thanks of Aertetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-]
-
+  {
+    id: "001",
+    height: "1000",
+    image: "/media/uni/uniachieve1.jpg",
+    title:
+      "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "002",
+    height: "480",
+    image: "/media/uni/uniachieve2.jpg",
+    title: "Our first magzine in ASPAD",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "003",
+    height: "1000",
+    image: "/media/uni/uniachieve1.jpg",
+    title:
+      "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "004",
+    height: "500",
+    poster: "media/uni/poster3.jpg",
+    video: "/media/uni/uniachieve3.mp4",
+    title: "Our team for drone designing",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+];
 
 export const sportAchievementData = [
-    {
-        image: "/media/uni/uniachieve1.jpg",
-        title: "thanks of Aerospace scintific assosiation for helding Solidworks competetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        image: "/media/uni/uniachieve2.jpg",
-        title: "thanks of Aerospace scintific",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        image: "/media/uni/uniachieve1.jpg",
-        title: "thanks of Aerospace scintific assosiation for helding Solidworks competetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        poster: "media/uni/poster3.jpg" ,
-        video: "/media/uni/uniachieve3.mp4",
-        title: "thanks of Aertetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-]
-
+  {
+    id: "001",
+    height: "1000",
+    image: "/media/uni/uniachieve1.jpg",
+    title:
+      "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "002",
+    height: "480",
+    image: "/media/uni/uniachieve2.jpg",
+    title: "Our first magzine in ASPAD",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "003",
+    height: "1000",
+    image: "/media/uni/uniachieve1.jpg",
+    title:
+      "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "004",
+    height: "500",
+    poster: "media/uni/poster3.jpg",
+    video: "/media/uni/uniachieve3.mp4",
+    title: "Our team for drone designing",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+];
 
 export const artAchievementData = [
-    {
-        image: "/media/uni/uniachieve1.jpg",
-        title: "thanks of Aerospace scintific assosiation for helding Solidworks competetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        image: "/media/uni/uniachieve2.jpg",
-        title: "thanks of Aerospace scintific",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        image: "/media/uni/uniachieve1.jpg",
-        title: "thanks of Aerospace scintific assosiation for helding Solidworks competetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-    {
-        poster: "media/uni/poster3.jpg" ,
-        video: "/media/uni/uniachieve3.mp4",
-        title: "thanks of Aertetion",
-        desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!"
-    },
-]
+  {
+    id: "001",
+    height: "1000",
+    image: "/media/uni/uniachieve1.jpg",
+    title:
+      "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "002",
+    height: "480",
+    image: "/media/uni/uniachieve2.jpg",
+    title: "Our first magzine in ASPAD",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "003",
+    height: "1000",
+    image: "/media/uni/uniachieve1.jpg",
+    title:
+      "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+  {
+    id: "004",
+    height: "500",
+    poster: "media/uni/poster3.jpg",
+    video: "/media/uni/uniachieve3.mp4",
+    title: "Our team for drone designing",
+    desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
+  },
+];

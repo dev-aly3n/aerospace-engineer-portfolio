@@ -14,6 +14,7 @@ import {
   leftToRightAnimation,
   photoAnimation,
   lineAnimation,
+  sectionAnimation2,
 } from "../animation";
 import { useOnScrollAnimation } from "../useOnScrollAnimation";
 
@@ -82,6 +83,7 @@ const Art = () => {
                 const randomNum = Math.random().toFixed(1) * 10;
                 return (
                   <img
+                    key={note}
                     style={{
                       animation: `musicNote${randomNum % 5} ${
                         (randomNum % (showBtn ? 8 : 1)) + (showBtn ? 5 : 1)
@@ -137,7 +139,7 @@ const Art = () => {
         {/* second */}
 
         <motion.div
-          variants={sectionAnimation}
+          variants={sectionAnimation2}
           ref={sec2}
           initial="hidden"
           animate={controls2}
@@ -201,8 +203,14 @@ const Art = () => {
               <AnimateSharedLayout>
                 <motion.ul layout className="achieve-list-container !w-full ">
                   {artAchievementData[0] &&
-                    artAchievementData.map((uniachieve) => {
-                      return <Achievement light={true} achieve={uniachieve} />;
+                    artAchievementData.map((artachieve) => {
+                      return (
+                        <Achievement
+                          key={artachieve.id}
+                          light={true}
+                          achieve={artachieve}
+                        />
+                      );
                     })}
                 </motion.ul>
               </AnimateSharedLayout>

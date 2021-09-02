@@ -61,6 +61,22 @@ export const sectionAnimation = {
     },
   },
 };
+export const sectionAnimation2 = {
+  hidden: {
+    opacity: 0,
+    scale: 1.1,
+  },
+  visable: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      duration: 0.4,
+      ease: "easeInOut",
+      when: "beforeChildren",
+      staggerChildren: 0.4,
+    },
+  },
+};
 
 export const leftToRightAnimation = {
   hidden: {

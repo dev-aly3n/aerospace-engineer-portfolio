@@ -33,7 +33,6 @@ const Achievement = ({ achieve, light }) => {
           className="expand-div"
         >
           <p className={`${light ? "!text-black" : ""}`}>{achieve.desc}</p>
-          <div style={{height:achieve.height}}>
             {achieve.image ? (
               <img  src={achieve.image} />
             ) : (
@@ -46,7 +45,6 @@ const Achievement = ({ achieve, light }) => {
                 Your browser doesn't suport video!
               </video>
             )}
-          </div>
         </motion.div>
       )}
       <div className={`${light ? "!bg-black" : ""}`}></div>

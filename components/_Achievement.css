@@ -9,11 +9,11 @@
       > p {
         @apply text-[0.85rem] md:text-base mb-3 text-white;
       }
-      > div > img {
-        @apply block  self-center;
+      > img {
+        @apply block max-w-[500px] self-center;
       }
-      > div > video {
-        @apply block self-center;
+      > video {
+        @apply block self-center max-w-[500px];
       }
     }
     > div:last-child {

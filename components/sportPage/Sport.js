@@ -41,8 +41,10 @@ const Sport = () => {
       initial="hidden"
       animate="visable"
       exit="out"
-      className="sport-container"
+      className="sport-container relative"
     >
+          <SportWave />
+
       {/* first */}
       {/* first */}
       {/* first */}

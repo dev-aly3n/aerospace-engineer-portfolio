@@ -1,7 +1,8 @@
 @layer components {
   .sport-container {
+    background-size: 100% 100%;
     @apply flex flex-col justify-center items-center w-full;
-    > div:nth-child(1) {
+    > div:nth-of-type(1) {
       @apply flex relative w-full justify-center sm:justify-evenly items-center mt-10;
       > div:first-of-type {
         @apply absolute top-10 left-3 sm:left-10 lg:left-36 xl:left-52 h-[469px] bg-yellow-400 w-full;
@@ -19,7 +20,7 @@
         @apply h-[600px] z-10;
       }
     }
-    > div:nth-child(2) {
+    > div:nth-of-type(2) {
       @apply flex flex-col md:flex-row-reverse relative w-full justify-evenly items-center mt-32;
       > div:first-of-type {
         @apply absolute top-10 right-5 sm:right-10 lg:right-20 xl:right-44 h-[400px] bg-gray-900 w-full;
@@ -38,7 +39,7 @@
         }
       }
     }
-    > div:nth-child(3) {
+    > div:nth-of-type(3) {
       @apply flex flex-col md:flex-row relative w-full justify-evenly items-center mt-32 mb-20 md:mb-44;
       > div:first-of-type {
         @apply absolute top-10 left-5 sm:left-10 lg:left-24 xl:left-48 h-[420px] lg:h-[500px] bg-gray-900 w-full;

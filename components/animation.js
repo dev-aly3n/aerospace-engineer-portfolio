@@ -57,7 +57,7 @@ export const sectionAnimation = {
       duration: 0.4,
       ease: "easeInOut",
       when: "beforeChildren",
-      staggerChildren: 0.6,
+      staggerChildren: 0.7,
     },
   },
 };
@@ -125,7 +125,18 @@ export const textAnimation = {
     opacity: 0,
   },
   visable: {
-    transition: { duration: 0.7, ease: "easeOut" },
+    transition: { duration: 0.8, ease: "easeOut" },
+    y: 0,
+    opacity: 1,
+  },
+};
+export const bioTextAnimation = {
+  hidden: {
+    y: 50,
+    opacity: 0,
+  },
+  visable: {
+    transition: { duration: 0.8, ease: "easeOut" },
     y: 0,
     opacity: 1,
   },
@@ -151,7 +162,7 @@ export const photoAnimation = {
   visable: {
     scale: 1,
     opacity: 1,
-    transition: { duration: 0.5 },
+    transition: { duration: 0.7 },
   },
 };
 
@@ -193,7 +204,7 @@ export const sportPhotoAnimation = {
   visable: {
     scale: 1,
     opacity: 1,
-    transition: { duration: 0.5, delay: 1.5 },
+    transition: { duration: 0.8, delay: 1.5 },
   },
 };
 
@@ -255,7 +266,7 @@ export const bioPhotoAnimation = {
     opacity:1,
     scale:1,
     transition:{
-      duration:0.1,
+      duration:0.3,
       ease:"easeOut"
     }
   }

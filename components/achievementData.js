@@ -1,7 +1,7 @@
 export const uniAchievementData = [
   {
     id: "001",
-    height: "1000",
+    height: "1000px",
     image: "/media/uni/uniachieve1.jpg",
     title:
       "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
@@ -9,14 +9,14 @@ export const uniAchievementData = [
   },
   {
     id: "002",
-    height: "480",
+    height: "480px",
     image: "/media/uni/uniachieve2.jpg",
     title: "Our first magzine in ASPAD",
     desc: "lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof! lorem ipsum we dont know js we should learn it but when I dont know I will know it some day oh my god how it is hard to right a lorem ipsum hooooooooof!",
   },
   {
     id: "003",
-    height: "1000",
+    height: "1000px",
     image: "/media/uni/uniachieve1.jpg",
     title:
       "Acknowledgment from the Aerospace Scientific Association for cooperation in holding the competition",
@@ -24,7 +24,7 @@ export const uniAchievementData = [
   },
   {
     id: "004",
-    height: "500",
+    height: "500px",
     poster: "media/uni/poster3.jpg",
     video: "/media/uni/uniachieve3.mp4",
     title: "Our team for drone designing",

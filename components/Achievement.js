@@ -33,19 +33,20 @@ const Achievement = ({ achieve, light }) => {
           className="expand-div"
         >
           <p className={`${light ? "!text-black" : ""}`}>{achieve.desc}</p>
-          {achieve.image ? (
-            <img height={achieve.height} src={achieve.image} />
-          ) : (
-            <video
-              controls
-              height={achieve.height}
-              preload="none"
-              poster={achieve.poster}
-            >
-              <source src={achieve.video} type="video/mp4" />
-              Your browser doesn't suport video!
-            </video>
-          )}
+          <div style={{height:achieve.height}}>
+            {achieve.image ? (
+              <img  src={achieve.image} />
+            ) : (
+              <video
+                controls
+                preload="none"
+                poster={achieve.poster}
+              >
+                <source src={achieve.video} type="video/mp4" />
+                Your browser doesn't suport video!
+              </video>
+            )}
+          </div>
         </motion.div>
       )}
       <div className={`${light ? "!bg-black" : ""}`}></div>

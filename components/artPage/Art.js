@@ -3,7 +3,7 @@ import Achievement from "../Achievement";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { artAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
-import { Fragment, useRef, useState } from "react";
+import { Fragment, useRef, useState, useEffect } from "react";
 import LoadingRing from "../LoadingRing";
 import {
   pageAnimation2,
@@ -17,6 +17,7 @@ import {
   sectionAnimation2,
 } from "../animation";
 import { useOnScrollAnimation } from "../useOnScrollAnimation";
+import MusicNote from "./MusicNote";
 
 const Art = () => {
   const [sec1, controls1] = useOnScrollAnimation();
@@ -80,19 +81,7 @@ const Art = () => {
             <p> Daf is fun</p>
             <div>
               {musicNotes.map((note) => {
-                const randomNum = Math.random().toFixed(1) * 10;
-                return (
-                  <img
-                    key={note}
-                    style={{
-                      animation: `musicNote${randomNum % 5} ${
-                        (randomNum % (showBtn ? 8 : 1)) + (showBtn ? 5 : 1)
-                      }s ease-out 0s infinite alternate`,
-                    }}
-                    src={`/media/art/musicnote${note % 3}.png`}
-                    alt=""
-                  />
-                );
+                return <MusicNote key={note} note={note} showBtn={showBtn} />;
               })}
             </div>
           </motion.div>

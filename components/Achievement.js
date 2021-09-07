@@ -41,7 +41,7 @@ const Achievement = ({ achieve, light }) => {
         <FontAwesomeIcon
           icon={faAngleRight}
           className={` transform  duration-700 ${expand ? "rotate-90 " : ""}`}
-        />
+        />{" "}
         {achieve.title}
       </motion.h3>
       {expand && (

@@ -53,6 +53,14 @@ export const uniAchievementData = [
 
 export const sportAchievementData = [
   {
+    id: "00",
+    width: 1400,
+    height: 900,
+    image: "/media/sport/sportachieve0.jpg",
+    title: "Participating in poomsae tutorial courses [2020]",
+    desc: "I have participated in creating video of poomsae tecniques beside the grand master of Taekwondo Mr.Dastjerdi",
+  },
+  {
     id: "000",
     width: 500,
     height: 700,

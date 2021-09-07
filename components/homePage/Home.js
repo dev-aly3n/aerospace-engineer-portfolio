@@ -134,7 +134,7 @@ const Home = () => {
             My diferent activities at the university:
             <br />
             -studying hard <br />
-            -focusing on projects <br />
+            -Learning & Teaching English language <br />
             -programming in <span className="text-yellow-500">Python</span>{" "}
             <br />
             -volunteer works like holding competetions, working on scintific

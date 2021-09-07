@@ -48,11 +48,11 @@
       > div:last-of-type {
         @apply overflow-y-hidden z-10;
        > p {
-          @apply text-lg lg:text-2xl font-medium z-10 md:mt-20 text-white ml-3 pr-3 w-11/12 sm:w-[450px];
+          @apply text-lg lg:text-2xl font-medium z-10 md:mt-20 text-white ml-3 pr-3 w-11/12 sm:w-[420px] lg:w-[450px];
         }
       }
       > img {
-        @apply ssm:w-[400px] lg:w-[600px] xl:ml-[150px]  h-full z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0;
+        @apply ssm:w-[400px] md:w-[330px] lg:w-[550px] xl:ml-[150px]  h-full z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0;
       }
       > button {
         @apply absolute bottom-7  sm:left-28 md:left-44 text-gray-800 bg-blue-500 p-3 rounded-2xl text-xl font-bold

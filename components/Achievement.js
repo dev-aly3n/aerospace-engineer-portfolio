@@ -64,7 +64,6 @@ const Achievement = ({ achieve, light }) => {
                 )}`}
                 width={achieve.width}
                 height={achieve.height}
-                layout="intrinsic"
               />
               {achieve.image2 && (
                 <Image
@@ -81,7 +80,7 @@ const Achievement = ({ achieve, light }) => {
             </Fragment>
           )}
           {achieve.video && (
-            <video controls width="500" preload="none" poster={achieve.poster}>
+            <video controls width="700" preload="none" poster={achieve.poster}>
               <source src={achieve.video} type="video/mp4" />
               Your browser doesn't suport video!
             </video>

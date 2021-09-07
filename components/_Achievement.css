@@ -16,7 +16,7 @@
         }
       }
       > video {
-        @apply block self-center w-[500px];
+        @apply block self-center w-[700px];
       }
     }
     > span:last-child {

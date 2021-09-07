@@ -109,12 +109,12 @@ const Sport = () => {
         <div>
           <motion.p variants={textAnimation} style={{ lineHeight: 1.7 }}>
             I am a professional athlete in{" "}
-            <span className="text-yellow-400">Taekwondo</span> for more than 6
+            <span className="text-yellow-400">Taekwondo</span> for more than 11
             years.
             <br />
           </motion.p>
           <motion.p variants={textAnimation}>
-            my mother is a Taekwondo master and she always encorage me to
+            my mother is a Taekwondo master and she always encourages me to
             continue.
           </motion.p>
         </div>
@@ -145,7 +145,7 @@ const Sport = () => {
               There is a world of peace for me in Taekwondo, I use it to clean
               my brain and make my body healthy. I have many{" "}
               <span className="text-yellow-400">Medals</span> in Poomsae
-              competetions that you can see them{" "}
+              competitions that you can see them{" "}
               <motion.button variants={buttonAnimation} onClick={atTheFollowingHandler}>
                 at the following!
                 <FontAwesomeIcon

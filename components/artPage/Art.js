@@ -156,7 +156,7 @@ const Art = () => {
               <motion.p variants={textAnimation}>
                 <FontAwesomeIcon icon={faMusic} /> Playing Daf is a hobby for me
                 for filling my time by beauty of music. It's about 4 years that
-                I play Daf. I training once a week and had participate in some
+                I play Daf. I am training once a week and have participated in many
                 festivals.
               </motion.p>
             </div>

@@ -39,7 +39,7 @@ const Biography = () => {
       {/* second */}
       {/* second */}
       <div>
-        <h3>Atefeh hasani</h3>
+        <h3>Atefeh Hasani</h3>
         <motion.p
           variants={bioTextAnimation}
           initial="hidden"
@@ -47,7 +47,7 @@ const Biography = () => {
           animate={controls1}
         >
           Atefeh Hasani was born in 1999 at Tehran/Iran.she grown up in a nice
-          family and went to high-scholl. It was the first place that she
+          family and went to high school. It was the first place that she
           started 3 journy in her life. Taekwondo, Daf and thinking about
           Aerospace.
         </motion.p>
@@ -57,8 +57,8 @@ const Biography = () => {
           ref={sec2}
           animate={controls2}
         >
-          She was new to all of them but her mother helped her to train and
-          train and train to be a professinal musician and athlete.
+          She was new to all of them but her parent helped her to train and
+          train and train to be a professional musician and athlete.
         </motion.p>
         <br />
         <motion.p
@@ -77,9 +77,9 @@ const Biography = () => {
           animate={controls4}
         >
           Atefeh found her hobbies at the very first days in university. she
-          found a tech-group to work with. the work was so exciting and it was
-          about Drones. she involved in a proccess to build some drones , some
-          new drones.
+          found a tech-group to work with. the project was so exciting and it
+          was about a new type of Drone. she involved in a proccess to build
+          some drones , some new drones.
         </motion.p>
         <motion.p
           variants={bioTextAnimation}
@@ -87,9 +87,9 @@ const Biography = () => {
           ref={sec5}
           animate={controls5}
         >
-          She also found a scintific magzine aka ASPAD. she worked in ASPAD as
-          an editor and writer. her article about airplane engines was the most
-          popular article in{" "}
+          She also found an academic magazine named ASPAD. she worked in ASPAD
+          as an editor and writer. her article about airplane engines was the
+          most popular article in{" "}
           <a href="https://aspadmag.ir/?p=215" target="_blank">
             ASPAD website
           </a>
@@ -101,9 +101,9 @@ const Biography = () => {
           ref={sec6}
           animate={controls6}
         >
-          And now after all she study hard and still works on her skills. she
-          started to learn Python and decided to be a professional programmer as
-          well.
+          And now after all she studies hard and still works on her skills. she
+          has started to learn Python and decided to be a professional
+          programmer as well.
         </motion.p>
       </div>
     </motion.div>

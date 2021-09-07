@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 
 export const useOnScrollAnimation = () => {
   const controls = useAnimation();
-  const [element, view] = useInView({ threshold: 0.5 });
+  const [element, view] = useInView({ threshold: 0.35 });
 
   if (view) {
     controls.start("visable");

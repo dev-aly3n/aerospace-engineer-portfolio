@@ -73,7 +73,7 @@ const Home = () => {
           </div>
           <br />
           <div>
-            <motion.h3 variants={textAnimation}>I am Atefeh Hassani.</motion.h3>
+            <motion.h3 variants={textAnimation}>I am Atefeh Hasani.</motion.h3>
           </div>
           <br />
           <div>
@@ -106,14 +106,13 @@ const Home = () => {
         <motion.img variants={photoAnimation} src="/media/uni/unisecond.png" />
         <div className="text-and-title">
           <motion.p variants={textAnimation} style={{ lineHeight: 1.5 }}>
-            I <span className="text-green-600">working</span> on UAVs
+            I <span className="text-green-600">working</span> on Drones
             <br />
             Airplanes and <br />
             Drones...
           </motion.p>
           <motion.p variants={textAnimation}>
-            This is one of my team work artifact that we called it super drone
-            plane. we worked on it for 3 month designing calculating and
+            This is one of my team work project that we called it UAV airplane which is vertical flying drone named VTOL. we worked on it for 3 month designing calculating and
             manufacturing. we made it on a team with 6 member at KNTU university
             of technology.{" "}
           </motion.p>
@@ -132,15 +131,15 @@ const Home = () => {
         <motion.div variants={leftToRightAnimation}></motion.div>
         <div>
           <motion.p variants={textAnimation} style={{ lineHeight: 1.5 }}>
-            There are diferent activities I have in university:
+            My diferent activities at the university:
             <br />
             -studying hard <br />
-            -focus on projects <br />
+            -focusing on projects <br />
             -programming in <span className="text-yellow-500">Python</span>{" "}
             <br />
             -volunteer works like holding competetions, working on scintific
-            magzine(<span className="text-green-500">ASPAD</span>),
-            participating in aerospace scintific assosiation’s activity and
+            magazine(<span className="text-green-500">ASPAD</span>),
+            participating in aerospace scintific association’s activity and
             ect...
           </motion.p>
         </div>

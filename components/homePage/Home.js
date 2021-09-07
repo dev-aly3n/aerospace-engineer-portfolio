@@ -18,7 +18,7 @@ import {
 import UniWave from "./UniWave";
 
 const Home = () => {
-  const [sec1, controls1] = useOnScrollAnimation();
+  const [sec1, controls1] = useOnScrollAnimation(0.25);
   const [sec2, controls2] = useOnScrollAnimation();
   const [sec3, controls3] = useOnScrollAnimation();
   const [sec4, controls4] = useOnScrollAnimation();

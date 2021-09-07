@@ -22,10 +22,10 @@ import {
 import SportWave from "./SportWave";
 
 const Sport = () => {
-  const [sec1, controls1] = useOnScrollAnimation();
+  const [sec1, controls1] = useOnScrollAnimation(0.3);
   const [sec2, controls2] = useOnScrollAnimation();
   const [sec3, controls3] = useOnScrollAnimation();
-  const [sec4, controls4] = useOnScrollAnimation();
+  const [sec4, controls4] = useOnScrollAnimation(0.1);
 
   const achieveRef = useRef(null);
   const atTheFollowingHandler = () => {

@@ -173,8 +173,8 @@ const Sport = () => {
         <AnimateSharedLayout>
           <motion.ul layout className="achieve-list-container">
             {sportAchievementData[0] &&
-              sportAchievementData.map((sportachieve) => {
-                return <Achievement key={sportachieve.id} achieve={sportachieve} />;
+              sportAchievementData.map((sportachieve, index) => {
+                return <Achievement key={sportachieve.id} num={index+1} achieve={sportachieve} />;
               })}
           </motion.ul>
         </AnimateSharedLayout>

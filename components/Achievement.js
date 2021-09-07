@@ -23,7 +23,7 @@ const toBase64 = (str) =>
     ? Buffer.from(str).toString("base64")
     : window.btoa(str);
 
-const Achievement = ({ achieve, light }) => {
+const Achievement = ({ achieve, light, num }) => {
   const [expand, setExpand] = useState(false);
   const descClickHandler = () => {
     setExpand(!expand);
@@ -42,6 +42,8 @@ const Achievement = ({ achieve, light }) => {
           icon={faAngleRight}
           className={` transform  duration-700 ${expand ? "rotate-90 " : ""}`}
         />{" "}
+        {num}
+        {". "}
         {achieve.title}
       </motion.h3>
       {expand && (

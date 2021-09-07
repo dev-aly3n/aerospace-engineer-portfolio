@@ -192,10 +192,11 @@ const Art = () => {
               <AnimateSharedLayout>
                 <motion.ul layout className="achieve-list-container !w-full ">
                   {artAchievementData[0] &&
-                    artAchievementData.map((artachieve) => {
+                    artAchievementData.map((artachieve, index) => {
                       return (
                         <Achievement
                           key={artachieve.id}
+                          num={index+1}
                           light={true}
                           achieve={artachieve}
                         />

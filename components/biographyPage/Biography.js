@@ -7,12 +7,12 @@ import {
 import { useOnScrollAnimation } from "../useOnScrollAnimation";
 
 const Biography = () => {
-  const [sec1, controls1] = useOnScrollAnimation();
-  const [sec2, controls2] = useOnScrollAnimation();
-  const [sec3, controls3] = useOnScrollAnimation();
-  const [sec4, controls4] = useOnScrollAnimation();
-  const [sec5, controls5] = useOnScrollAnimation();
-  const [sec6, controls6] = useOnScrollAnimation();
+  const [sec1, controls1] = useOnScrollAnimation(0.7);
+  const [sec2, controls2] = useOnScrollAnimation(0.7);
+  const [sec3, controls3] = useOnScrollAnimation(0.7);
+  const [sec4, controls4] = useOnScrollAnimation(0.7);
+  const [sec5, controls5] = useOnScrollAnimation(0.7);
+  const [sec6, controls6] = useOnScrollAnimation(0.7);
   return (
     <motion.div
       variants={pageAnimation}

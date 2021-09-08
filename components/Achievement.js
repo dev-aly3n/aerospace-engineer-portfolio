@@ -3,6 +3,8 @@ import { Fragment, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+import {useOnScrollAnimation} from "./useOnScrollAnimation";
+import {achieveAnimation} from './animation';
 
 const shimmer = (w, h) => `
 <svg width="${w}" height="${h}" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -24,12 +26,17 @@ const toBase64 = (str) =>
     : window.btoa(str);
 
 const Achievement = ({ achieve, light, num }) => {
+  const [sec, controls] = useOnScrollAnimation(1);
   const [expand, setExpand] = useState(false);
   const descClickHandler = () => {
     setExpand(!expand);
   };
   return (
     <motion.li
+              variants={achieveAnimation}
+          initial="hidden"
+          ref={sec}
+          animate={controls}
       layout
       className={`achievement-container ${light ? "!text-black" : ""}`}
     >

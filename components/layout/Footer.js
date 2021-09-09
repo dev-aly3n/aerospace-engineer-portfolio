@@ -71,22 +71,22 @@ const Footer = () => {
         <h3>Contact</h3>
         <ul>
           <li>
-            <a target="_blank">Email</a>
+            <a target="_blank" href="mailto:dev.atefeh@gmail.com">Email</a>
           </li>
           <li>
-            <a target="_blank">ASPAD</a>
-          </li>
-          <li>
-            <a target="_blank">GitHub</a>
+            <a target="_blank" href="https://github.com/dev-atefeh">GitHub</a>
           </li>
           <li>
             <a target="_blank">LinkedIn</a>
           </li>
           <li>
-            <a target="_blank">Instagram</a>
+            <a target="_blank" href="https://www.instagram.com/aty_ha.tkd/">Instagram</a>
           </li>
           <li>
-            <a target="_blank">Telegram</a>
+            <a target="_blank" href="https://t.me/Aty_Ha">Telegram</a>
+          </li>
+          <li>
+            <a target="_blank" href="https://aspadmag.ir">ASPAD</a>
           </li>
         </ul>
       </div>

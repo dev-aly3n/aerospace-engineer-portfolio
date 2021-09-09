@@ -11,6 +11,9 @@
         @apply z-10 flex flex-row-reverse xl:gap-x-20;
         > p {
           @apply z-10 text-[33px] font-black -mt-16 flex flex-col items-center;
+          >span:nth-child(2n){
+            @apply animate-pulse;
+          }
         }
         > img {
           @apply h-[300px] z-10 hidden md:block;

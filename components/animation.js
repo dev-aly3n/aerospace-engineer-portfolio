@@ -134,18 +134,17 @@ export const lineAnimation = {
 
 export const achieveAnimation = {
   hidden: {
-    x: 20,
-    y:20,
+    x: -20,
+    y: -20,
     opacity: 0,
   },
   visable: {
     transition: { duration: 1 },
     x: 0,
-    y:0,
+    y: 0,
     opacity: 1,
   },
 };
-
 
 //home
 //home
@@ -172,7 +171,6 @@ export const bioTextAnimation = {
     opacity: 1,
   },
 };
-
 
 export const buttonAnimation = {
   hidden: {
@@ -320,6 +318,6 @@ export const sportwaveAnimation = {
   visable: {
     pathLength: 1,
     pathOffset: 0,
-    transition: { duration: 30, delay: 0, ease:[.12,.35,.9,1.05]},
-  }
+    transition: { duration: 30, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
+  },
 };

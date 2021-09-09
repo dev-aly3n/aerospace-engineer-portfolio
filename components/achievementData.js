@@ -195,17 +195,7 @@ export const sportAchievementData = [
 ];
 
 export const artAchievementData = [
-  {
-    id: "000",
-    width: 1400,
-    height: 1000,
-    image: "/media/art/artachieve0.jpg",
-    width2: 500,
-    height2: 700,
-    image2: "/media/art/artachieve1_2.jpg",
-    title: "Daf festival of Seraj Library [2020]",
-    desc: "This is an art certificate for a Turkish festival of Daf at Seraj Library at Tehran which I have participated ",
-  },
+
   {
     id: "001",
     width: 1400,

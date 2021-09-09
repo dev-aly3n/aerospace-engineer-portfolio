@@ -135,7 +135,7 @@ export const lineAnimation = {
 export const achieveAnimation = {
   hidden: {
     x: -20,
-    y: -20,
+    y: 20,
     opacity: 0,
   },
   visable: {

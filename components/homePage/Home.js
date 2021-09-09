@@ -106,7 +106,7 @@ const Home = () => {
         <motion.img variants={photoAnimation} src="/media/uni/unisecond.png" />
         <div className="text-and-title">
           <motion.p variants={textAnimation} style={{ lineHeight: 1.5 }}>
-            I <span className="text-green-600">working</span> on Drones
+            I <span className="text-green-600">working</span> on UAV
             <br />
             Airplanes and <br />
             Drones...

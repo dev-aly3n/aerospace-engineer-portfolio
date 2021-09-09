@@ -184,7 +184,7 @@ const Art = () => {
           </div>
           <div>
             <div ref={achieveRef} className="achievement ">
-              <h2 className="!text-black !font-bold">My Achievements</h2>
+              <h2 className="!text-black !font-bold">Events and Festivals</h2>
               <motion.div
                 variants={lineAnimation}
                 className="!bg-black"

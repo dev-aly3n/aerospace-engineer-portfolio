@@ -168,7 +168,7 @@ const Sport = () => {
         ref={sec4}
         className="achievement"
       >
-        <h2 ref={achieveRef}>My Achievements</h2>
+        <h2 ref={achieveRef}>My Achievements and Championships</h2>
         <motion.div variants={lineAnimation}></motion.div>
         <AnimateSharedLayout>
           <motion.ul layout className="achieve-list-container">

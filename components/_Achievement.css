@@ -27,7 +27,7 @@
   .achievement {
     @apply w-full flex flex-col justify-center items-center mt-32 relative z-50;
     > h2 {
-      @apply text-3xl text-white;
+      @apply text-3xl text-white text-center;
     }
     > div:first-of-type {
       @apply w-8/12 sm:w-1/2 h-px mt-2 bg-white mb-10;

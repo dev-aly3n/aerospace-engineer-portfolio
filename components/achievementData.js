@@ -36,14 +36,6 @@ export const uniAchievementData = [
   },
   {
     id: "004",
-    width: 1300,
-    height: 900,
-    image: "/media/uni/uniachieve5.jpg",
-    title: "Graduation in Learning English language [2018]",
-    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
-  },
-  {
-    id: "005",
     width: 1400,
     height: 900,
     image: "/media/uni/uniachieve2.jpg",
@@ -54,6 +46,14 @@ export const uniAchievementData = [
     video: "/media/uni/uniachieve2_1.mp4",
     title: "Working on a new drone [2018]",
     desc: " This certificate has given to me for working on a vertical flight drone(VTOL) as a member of manufacture team at KNTU university",
+  },
+  {
+    id: "005",
+    width: 1300,
+    height: 900,
+    image: "/media/uni/uniachieve5.jpg",
+    title: "Graduation in Learning English language [2018]",
+    desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
   },
 ];
 

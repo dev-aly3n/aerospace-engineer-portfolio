@@ -25,7 +25,7 @@ const Header = () => {
   return (
       <div className="h-full w-full flex flex-col sm:flex-row justify-evenly items-center bg-gray-900 relative" style={{zIndex:100}}>
         <h1
-          className="text-xl sm:text-2xl md:text-3xl pt-2 whitespace-nowrap text-white"
+          className="text-xl sm:text-2xl md:text-3xl pt-2 whitespace-nowrap text-white hover:text-pink-200 duration-2000"
           style={{ fontFamily: "'Berkshire Swash', cursive" }}
         >
           <Link href='/' >Atefeh Hasani</Link>

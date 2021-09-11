@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 const headerLinks = [
   {
     ref: "/",
-    text: "University",
+    text: "Career",
   },
   {
     ref: "/sport",

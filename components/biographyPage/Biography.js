@@ -35,6 +35,7 @@ const Biography = () => {
         <motion.img
           variants={bioPhotoAnimation}
           src="/media/life/lifefirst.jpg"
+          alt="atefeh hasani"
         />
         <div></div>
         <div>

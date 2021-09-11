@@ -170,7 +170,7 @@ const Art = () => {
               </motion.p>
             </div>
             <motion.div variants={photoAnimation}>
-              <img src="media/art/artsecond.jpg" alt="" />
+              <img src="media/art/artsecond.jpg" alt="atefeh hasani daf player" />
             </motion.div>
           </div>
         </motion.div>
@@ -188,7 +188,7 @@ const Art = () => {
             <motion.img
               variants={photoAnimation}
               src="media/art/artthird.png"
-              alt=""
+              alt="atefeh hasani daf player"
             />
           </div>
           <div>

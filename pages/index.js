@@ -6,12 +6,12 @@ export default function home() {
   return (
     <Fragment>
       <Head>
-      <title>Atefeh Hasani - University</title>
+      <title>Atefeh Hasani - Aerospace engineer</title>
         <meta
           name="description"
           content="Atefeh Hasani is an aerospace engineer and a pro taekwondo athlete who is also good in playing Daf."
         />
-        <meta name="keywords" content="Atefeh Hasani , عاطفه حسنی" />
+        <meta name="keywords" content="Atefeh Hasani , عاطفه حسنی هوافضا, عاطفه حسنی, aerospace, aerospace engineer, هوافضا, مهندسی هوافضا" />
         <meta name="author" content="Atefeh Hasani" />
         <link rel="preload" as="image" href="/media/uni/unifirst.png" />
         <link rel="preload" as="image" href="/media/art/artfirst.jpg" />

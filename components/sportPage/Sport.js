@@ -66,6 +66,7 @@ const Sport = () => {
           <motion.img
             variants={sportImgAnimation}
             src="/media/sport/sportfirst2.png"
+            alt="atefeh hasani taekwondo athlete"
           />
           <p>
             <motion.span variants={twAnimation} custom={0}>
@@ -100,7 +101,7 @@ const Sport = () => {
         <motion.img
           variants={sportPhotoAnimation}
           src="/media/sport/sportfirst.png"
-          alt=""
+          alt="atefeh hasani taekwondo athlete"
         />
       </motion.div>
       {/* second */}
@@ -128,7 +129,7 @@ const Sport = () => {
         <motion.img
           variants={borderAnimation}
           src="/media/sport/sportsecond.png"
-          alt=""
+          alt="atefeh hasani taekwondo athlete"
         />
       </motion.div>
 
@@ -169,7 +170,7 @@ const Sport = () => {
         <motion.img
           variants={photoAnimation}
           src="/media/sport/sportthird.jpg"
-          alt=""
+          alt="atefeh hasani taekwondo athlete"
         />
       </motion.div>
 

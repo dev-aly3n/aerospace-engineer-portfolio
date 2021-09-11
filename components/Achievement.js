@@ -55,7 +55,7 @@ const Achievement = ({ achieve, light, num }) => {
             <Fragment>
               <Image
                 src={achieve.image}
-                alt=""
+                alt={"atefeh hasani - " + achieve.title}
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(
                   shimmer(700, 475)

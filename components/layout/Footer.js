@@ -90,9 +90,9 @@ const Footer = () => {
           </li>
         </ul>
       </div>
-      <p className="absolute bottom-0 left-0 flex flex-col justify-center w-full items-center text-green-50">
-        <span className="bg-green-50/20  h-px w-full"></span>
-        <span className="p-3">All right reserved © dev-aly3n 2021</span>
+      <p>
+        <span></span>
+        <span>All right reserved © dev-aly3n 2021</span>
       </p>
     </div>
   );

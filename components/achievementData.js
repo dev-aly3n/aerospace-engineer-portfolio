@@ -23,7 +23,8 @@ export const uniAchievementData = [
     width: 1400,
     height: 900,
     image: "/media/uni/uniachieve3.jpg",
-    title: "Teaching English Language - Caspian English Language Academy [2019]",
+    title:
+      "Teaching English Language - Caspian English Language Academy [2019]",
     desc: "This is my TTC(Teacher Training Course) certificate for learning how to teach English language from Caspian English Language Academy under the Ministry of Education",
   },
   {
@@ -56,8 +57,6 @@ export const uniAchievementData = [
     desc: "This is my graduation certificate in learning English from ILI(Iran Language Institute)",
   },
 ];
-
-
 
 export const sportAchievementData = [
   {
@@ -138,7 +137,8 @@ export const sportAchievementData = [
     width2: 500,
     height2: 700,
     image2: "/media/sport/sportachieve6_2.jpg",
-    title: "Hanmadang Nupi-Apchagi and Hanmadang individual Poomsae Championship verdict [2015]",
+    title:
+      "Hanmadang Nupi-Apchagi and Hanmadang individual Poomsae Championship verdict [2015]",
     desc: " Second place in the Hanmadang Nupi-Apchagi competition and Third place in the Hanmadang individual Poomsae competition",
   },
   {
@@ -195,7 +195,6 @@ export const sportAchievementData = [
 ];
 
 export const artAchievementData = [
-
   {
     id: "001",
     width: 1400,
@@ -245,7 +244,8 @@ export const artAchievementData = [
     width2: 1100,
     height2: 700,
     image2: "/media/art/artachieve5_2.jpg",
-    title: "Daf Festival at Tehran Pardis Theater in Khavaran Cultural Center [2019]",
+    title:
+      "Daf Festival at Tehran Pardis Theater in Khavaran Cultural Center [2019]",
     desc: "This festival has been held to respect of a grand Turk musician at winter. My mother, my auntie and me have participated in it.",
   },
 ];

@@ -41,9 +41,9 @@ const Sport = () => {
       initial="hidden"
       animate="visable"
       exit="out"
-      className="sport-container relative"
+      className="sport-container"
     >
-          <SportWave controls1={controls1} />
+      <SportWave controls1={controls1} />
 
       {/* first */}
       {/* first */}
@@ -146,7 +146,10 @@ const Sport = () => {
               my brain and make my body healthy. I have many{" "}
               <span className="text-yellow-400">Medals</span> in Poomsae
               competitions that you can see them{" "}
-              <motion.button variants={buttonAnimation} onClick={atTheFollowingHandler}>
+              <motion.button
+                variants={buttonAnimation}
+                onClick={atTheFollowingHandler}
+              >
                 at the following!
                 <FontAwesomeIcon
                   className="animate-bounce"
@@ -156,7 +159,11 @@ const Sport = () => {
             </span>
           </motion.p>
         </div>
-        <motion.img variants={photoAnimation} src="/media/sport/sportthird.jpg" alt="" />
+        <motion.img
+          variants={photoAnimation}
+          src="/media/sport/sportthird.jpg"
+          alt=""
+        />
       </motion.div>
 
       {/* achievement */}
@@ -174,7 +181,13 @@ const Sport = () => {
           <motion.ul layout className="achieve-list-container">
             {sportAchievementData[0] &&
               sportAchievementData.map((sportachieve, index) => {
-                return <Achievement key={sportachieve.id} num={index+1} achieve={sportachieve} />;
+                return (
+                  <Achievement
+                    key={sportachieve.id}
+                    num={index + 1}
+                    achieve={sportachieve}
+                  />
+                );
               })}
           </motion.ul>
         </AnimateSharedLayout>

@@ -9,7 +9,7 @@ export default function art() {
         <title>Atefeh Hasani - Art</title>
         <meta
           name="description"
-          content="Atefeh Hasani is an aerospace engineer and a pro taekwondo athlete who is also good in music."
+          content="Atefeh Hasani is an aerospace engineer and a pro taekwondo athlete who is also good in playing Daf."
         />
         <meta name="keywords" content="Atefeh Hasani , عاطفه حسنی" />
         <meta name="author" content="Atefeh Hasani" />

@@ -1,10 +1,19 @@
-import { faMusic, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
-import Achievement from "../Achievement";
+//libs
+import { Fragment, useRef, useState } from "react";
+
+//components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { artAchievementData } from "../achievementData";
+import Achievement from "../Achievement";
+import { faMusic, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
 import { AnimateSharedLayout, motion } from "framer-motion";
-import { Fragment, useRef, useState, useEffect } from "react";
+
+//helpers & data
+import { artAchievementData } from "../achievementData";
 import LoadingRing from "../LoadingRing";
+import { useOnScrollAnimation } from "../useOnScrollAnimation";
+import MusicNote from "./MusicNote";
+
+//animations
 import {
   pageAnimation2,
   artTranAnimation,
@@ -16,8 +25,6 @@ import {
   lineAnimation,
   sectionAnimation2,
 } from "../animation";
-import { useOnScrollAnimation } from "../useOnScrollAnimation";
-import MusicNote from "./MusicNote";
 
 const Art = () => {
   const [sec1, controls1] = useOnScrollAnimation();
@@ -28,6 +35,8 @@ const Art = () => {
   const [showBtn, setShowBtn] = useState(true);
   const [isLoadingVideo, setIsLoadingVideo] = useState(false);
   const achieveRef = useRef(null);
+
+  // create an array to map 
   const musicNotes = [...Array(15).keys()];
 
   const firstVideoClickHandler = () => {

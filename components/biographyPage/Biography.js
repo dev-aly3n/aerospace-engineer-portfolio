@@ -1,10 +1,17 @@
+//libs
+
+//components
 import { motion } from "framer-motion";
+
+//helpers & data
+import { useOnScrollAnimation } from "../useOnScrollAnimation";
+
+//animations
 import {
   bioPhotoAnimation,
   pageAnimation,
   bioTextAnimation,
 } from "../animation";
-import { useOnScrollAnimation } from "../useOnScrollAnimation";
 
 const Biography = () => {
   const [sec1, controls1] = useOnScrollAnimation(0.7);

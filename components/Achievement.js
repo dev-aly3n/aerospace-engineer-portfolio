@@ -1,11 +1,18 @@
-import { motion } from "framer-motion";
+//libs
 import { Fragment, useState } from "react";
+
+//components
+import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
+
+//helpers & data
 import { useOnScrollAnimation } from "./useOnScrollAnimation";
-import { achieveAnimation } from "./animation";
 import { shimmer, toBase64 } from "./util";
+
+//animations
+import { achieveAnimation } from "./animation";
 
 const Achievement = ({ achieve, light, num }) => {
   const [sec, controls] = useOnScrollAnimation(1);

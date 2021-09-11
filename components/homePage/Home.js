@@ -1,10 +1,18 @@
+//libs
 import { useRef } from "react";
+
+//components
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Achievement from "../Achievement";
-import { uniAchievementData } from "../achievementData";
 import { AnimateSharedLayout, motion } from "framer-motion";
+import UniWave from "./UniWave";
+
+//helpers & data
+import { uniAchievementData } from "../achievementData";
 import { useOnScrollAnimation } from "../useOnScrollAnimation";
+
+//animations
 import {
   pageAnimation,
   textAnimation,
@@ -15,7 +23,6 @@ import {
   sectionAnimation,
   lineAnimation,
 } from "../animation";
-import UniWave from "./UniWave";
 
 const Home = () => {
   const [sec1, controls1] = useOnScrollAnimation(0.25);
@@ -112,9 +119,10 @@ const Home = () => {
             Drones...
           </motion.p>
           <motion.p variants={textAnimation}>
-            This is one of my team work project that we called it UAV airplane which is vertical flying drone named VTOL. we worked on it for 3 month designing calculating and
-            manufacturing. we made it on a team with 6 member at KNTU university
-            of technology.{" "}
+            This is one of my team work project that we called it UAV airplane
+            which is vertical flying drone named VTOL. we worked on it for 3
+            month designing calculating and manufacturing. we made it on a team
+            with 6 member at KNTU university of technology.{" "}
           </motion.p>
         </div>
       </motion.div>
@@ -165,7 +173,13 @@ const Home = () => {
           <motion.ul layout className="achieve-list-container">
             {uniAchievementData[0] &&
               uniAchievementData.map((uniachieve, index) => {
-                return <Achievement key={uniachieve.id} num={index+1} achieve={uniachieve} />;
+                return (
+                  <Achievement
+                    key={uniachieve.id}
+                    num={index + 1}
+                    achieve={uniachieve}
+                  />
+                );
               })}
           </motion.ul>
         </AnimateSharedLayout>

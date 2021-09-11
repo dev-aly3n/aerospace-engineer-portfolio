@@ -1,10 +1,18 @@
+//libs
+import { useRef } from "react";
+
+//components
 import { AnimateSharedLayout, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
-import { sportAchievementData } from "../achievementData";
-import { Fragment, useRef } from "react";
 import Achievement from "../Achievement";
+import SportWave from "./SportWave";
+
+//helpers & data
+import { sportAchievementData } from "../achievementData";
 import { useOnScrollAnimation } from "../useOnScrollAnimation";
+
+//animations
 import {
   pageAnimation,
   textAnimation,
@@ -19,7 +27,6 @@ import {
   sportPhotoAnimation,
   borderAnimation,
 } from "../animation";
-import SportWave from "./SportWave";
 
 const Sport = () => {
   const [sec1, controls1] = useOnScrollAnimation(0.3);

@@ -92,7 +92,7 @@ const Footer = () => {
       </div>
       <p>
         <span></span>
-        <span>All right reserved © dev-aly3n 2021</span>
+        <span>All right reserved © <a target="_blank" href="https://github.com/dev-aly3n/aerospace-engineer-portfolio">dev-aly3n</a> 2021</span>
       </p>
     </div>
   );

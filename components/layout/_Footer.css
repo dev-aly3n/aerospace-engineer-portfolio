@@ -29,6 +29,9 @@
       }
       >span:last-of-type{
         @apply p-3;
+        >a {
+          @apply hover:text-blue-500 hover:cursor-pointer duration-500;
+        }
       }
     }
   }

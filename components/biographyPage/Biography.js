@@ -55,7 +55,7 @@ const Biography = () => {
           animate={controls1}
         >
           Atefeh Hasani was born in 1999 at Tehran/Iran.she grown up in a nice
-          family and went to high school. It was the first place that she
+          family and went to school. It was the first place that she
           started 3 journy in her life. Taekwondo, Daf and thinking about
           Aerospace.
         </motion.p>
@@ -65,7 +65,7 @@ const Biography = () => {
           ref={sec2}
           animate={controls2}
         >
-          She was new to all of them but her parent helped her to train and
+          She was new to all of them but her parents helped her to train and
           train and train to be a professional musician and athlete.
         </motion.p>
         <br />
@@ -75,7 +75,7 @@ const Biography = () => {
           ref={sec3}
           animate={controls3}
         >
-          After Entring University, young happy Atefeh was so excited so She
+          After entering University, young happy Atefeh was so excited so She
           started searching for anything she can discover in Aerospace.
         </motion.p>
         <motion.p
@@ -86,7 +86,7 @@ const Biography = () => {
         >
           Atefeh found her hobbies at the very first days in university. she
           found a tech-group to work with. the project was so exciting and it
-          was about a new type of Drone. she involved in a proccess to build
+          was about a new type of Drone. she involved in a process to build
           some drones , some new drones.
         </motion.p>
         <motion.p

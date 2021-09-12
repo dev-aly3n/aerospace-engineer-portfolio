@@ -151,8 +151,8 @@ const Sport = () => {
           <motion.p variants={textAnimation}>
             <span className="text-lg lg:text-xl font-normal lg:font-medium">
               There is a world of peace for me in Taekwondo, I use it to clean
-              my brain and make my body healthy. I have many{" "}
-              <span className="text-yellow-400">Medals</span> in Poomsae
+              my mind and make my body healthy. I have many{" "}
+              <span className="text-yellow-400">Medals</span> in Taekwondo
               competitions that you can see them{" "}
               <motion.button
                 variants={buttonAnimation}

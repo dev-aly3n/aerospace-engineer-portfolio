@@ -4,8 +4,8 @@ export const uniAchievementData = [
     width: 500,
     height: 400,
     image: "/media/uni/uniachieve0.jpg",
-    title: "Academic  AeroSpace magazine called ASPAD [2020]",
-    desc: "This is one of my precious achievement which has been give to me as a member of executive staff at holding solidworks competition at KNTU university",
+    title: "Academic AeroSpace magazine called ASPAD [2020]",
+    desc: "I have participated in producing an academic aerospace magazine as writer and editor and this is the picture of our first magazine",
   },
   {
     id: "001",

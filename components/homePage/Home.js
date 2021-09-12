@@ -89,7 +89,11 @@ const Home = () => {
             </motion.h3>
           </div>
         </motion.div>
-        <motion.img variants={photoAnimation} src="/media/uni/unifirst.png" alt="atefeh hasani aerospace engineer" />
+        <motion.img
+          variants={photoAnimation}
+          src="/media/uni/unifirst.png"
+          alt="atefeh hasani aerospace engineer"
+        />
         <motion.button
           ref={secondRef}
           variants={buttonAnimation}
@@ -110,7 +114,11 @@ const Home = () => {
         ref={sec2}
       >
         <motion.div variants={rightToLeftAnimation}></motion.div>
-        <motion.img variants={photoAnimation} src="/media/uni/unisecond.png" alt="atefeh hasani aerospace engineer" />
+        <motion.img
+          variants={photoAnimation}
+          src="/media/uni/unisecond.png"
+          alt="atefeh hasani aerospace engineer"
+        />
         <div className="text-and-title">
           <motion.p variants={textAnimation} style={{ lineHeight: 1.5 }}>
             I <span className="text-green-600">working</span> on UAV
@@ -119,10 +127,10 @@ const Home = () => {
             Drones...
           </motion.p>
           <motion.p variants={textAnimation}>
-            This is one of my team work project that we called it UAV airplane
-            which is vertical flying drone named VTOL. we worked on it for 3
-            month designing calculating and manufacturing. we made it on a team
-            with 6 member at KNTU university of technology.{" "}
+            This is one of my team work project which is vertical & horizontal
+            flying drone named VTOL. we worked on it for 3 month designing,
+            calculating and manufacturing. we made it in a team with 6 member at
+            KNTU university of technology.{" "}
           </motion.p>
         </div>
       </motion.div>
@@ -139,19 +147,23 @@ const Home = () => {
         <motion.div variants={leftToRightAnimation}></motion.div>
         <div>
           <motion.p variants={textAnimation} style={{ lineHeight: 1.5 }}>
-            My diferent activities at the university:
+            My diferent activities:
             <br />
             -studying hard <br />
             -Learning & Teaching English language <br />
             -programming in <span className="text-yellow-500">Python</span>{" "}
             <br />
-            -volunteer works like holding competetions, working on scintific
+            -volunteer works like holding competitions, working on scientific
             magazine(<span className="text-green-500">ASPAD</span>),
-            participating in aerospace scintific association’s activity and
-            ect...
+            participating in aerospace scientific association’s activity and
+            ect.
           </motion.p>
         </div>
-        <motion.img variants={photoAnimation} src="/media/uni/unithird.jpg" alt="atefeh hasani aerospace engineer" />
+        <motion.img
+          variants={photoAnimation}
+          src="/media/uni/unithird.jpg"
+          alt="atefeh hasani aerospace engineer"
+        />
         <motion.button variants={buttonAnimation} onClick={learnMoreBtnHandler}>
           Learn more...{" "}
           <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />

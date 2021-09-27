@@ -1,19 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
   <url>
     <loc>https://atefeh-hasani.vercel.app/</loc>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://atefeh-hasani.vercel.app/biography</loc>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://atefeh-hasani.vercel.app/sport</loc>
-    <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://atefeh-hasani.vercel.app/art</loc>
-    <changefreq>monthly</changefreq>
   </url>
+
+  <url>
+	<loc>https://atefeh-hasani.vercel.app/</loc>
+	<lastmod>2021-09-27T13:05:25+01:00</lastmod>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/unifirst.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/unisecond.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/unithird.jpg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://atefeh-hasani.vercel.app/sport</loc>
+	<lastmod>2021-09-27T13:05:25+01:00</lastmod>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportfirst2.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportfirst.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportsecond.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportthird.jpg</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://atefeh-hasani.vercel.app/art</loc>
+	<lastmod>2021-09-27T13:05:29+01:00</lastmod>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/musicnote0.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/musicnote1.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/musicnote2.png</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artsecond.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artthird.png</image:loc>
+	</image:image>
+</url>
+<url>
+	<loc>https://atefeh-hasani.vercel.app/biography</loc>
+	<lastmod>2021-09-27T13:05:29+01:00</lastmod>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/life/lifefirst.jpg</image:loc>
+	</image:image>
+</url>
 </urlset>

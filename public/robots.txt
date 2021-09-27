@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://atefeh-hasani.vercel.app/sitemap.xml

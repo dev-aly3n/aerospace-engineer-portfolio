@@ -13,10 +13,6 @@ export default function sport() {
         />
         <meta name="keywords" content="Atefeh Hasani , عاطفه حسنی" />
         <meta name="author" content="Atefeh Hasani" />
-        <link rel="preload" as="image" href="/media/uni/unifirst.png" />
-        <link rel="preload" as="image" href="/media/art/artfirst.jpg" />
-        <link rel="preload" as="image" href="/media/sport/sportfirst.png" />
-        <link rel="preload" as="image" href="/media/sport/sportfirst2.png" />
       </Head>
   <Sport />
     </Fragment>

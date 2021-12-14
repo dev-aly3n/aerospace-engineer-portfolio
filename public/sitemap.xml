@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-  <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<url>
 	<loc>https://atefeh-hasani.vercel.app/</loc>
-	<lastmod>2021-09-27T13:05:25+01:00</lastmod>
+	<lastmod>2021-12-14T13:05:47+01:00</lastmod>
 	<priority>1.0</priority>
 	<image:image>
 			<image:loc>https://atefeh-hasani.vercel.app/media/uni/unifirst.png</image:loc>
@@ -13,10 +13,34 @@
 	<image:image>
 			<image:loc>https://atefeh-hasani.vercel.app/media/uni/unithird.jpg</image:loc>
 	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve0.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve1.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve1_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve3.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve4.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve2_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/uni/uniachieve5.jpg</image:loc>
+	</image:image>
 </url>
 <url>
 	<loc>https://atefeh-hasani.vercel.app/sport</loc>
-	<lastmod>2021-09-27T13:05:25+01:00</lastmod>
+	<lastmod>2021-12-14T13:05:47+01:00</lastmod>
 	<priority>1.0</priority>
 	<image:image>
 			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportfirst2.png</image:loc>
@@ -30,10 +54,67 @@
 	<image:image>
 			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportthird.jpg</image:loc>
 	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve0.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve1.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve2_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve3.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve4.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve5.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve9.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve9_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve8.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve6.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve6_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve10.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve12.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve12_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve13.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve15.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve16.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/sport/sportachieve17.jpg</image:loc>
+	</image:image>
 </url>
 <url>
 	<loc>https://atefeh-hasani.vercel.app/art</loc>
-	<lastmod>2021-09-27T13:05:29+01:00</lastmod>
+	<lastmod>2021-12-14T13:05:47+01:00</lastmod>
 	<priority>1.0</priority>
 	<image:image>
 			<image:loc>https://atefeh-hasani.vercel.app/media/art/musicnote0.png</image:loc>
@@ -50,10 +131,37 @@
 	<image:image>
 			<image:loc>https://atefeh-hasani.vercel.app/media/art/artthird.png</image:loc>
 	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve1.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve1_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve3.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve3_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve4.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve4_2.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve5.jpg</image:loc>
+	</image:image>
+	<image:image>
+			<image:loc>https://atefeh-hasani.vercel.app/media/art/artachieve5_2.jpg&amp;w=1200&amp;q=75</image:loc>
+	</image:image>
 </url>
 <url>
 	<loc>https://atefeh-hasani.vercel.app/biography</loc>
-	<lastmod>2021-09-27T13:05:29+01:00</lastmod>
+	<lastmod>2021-12-14T13:05:47+01:00</lastmod>
 	<priority>1.0</priority>
 	<image:image>
 			<image:loc>https://atefeh-hasani.vercel.app/media/life/lifefirst.jpg</image:loc>

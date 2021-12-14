@@ -134,14 +134,10 @@ export const lineAnimation = {
 
 export const achieveAnimation = {
   hidden: {
-    x: -20,
-    y: 20,
     opacity: 0,
   },
   visable: {
     transition: { duration: 1 },
-    x: 0,
-    y: 0,
     opacity: 1,
   },
 };

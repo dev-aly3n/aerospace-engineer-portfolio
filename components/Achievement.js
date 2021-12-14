@@ -26,7 +26,6 @@ const Achievement = ({ achieve, light, num }) => {
       initial="hidden"
       ref={sec}
       animate={controls}
-      layout
       className={`achievement-container ${light ? "!text-black" : ""}`}
     >
       <motion.h3
@@ -42,50 +41,52 @@ const Achievement = ({ achieve, light, num }) => {
         {". "}
         {achieve.title}
       </motion.h3>
-      {expand && (
-        <motion.div
-          layout
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          exit={{ opacity: 0 }}
-          className="expand-div"
-        >
-          <p className={`${light ? "!text-black" : ""}`}>{achieve.desc}</p>
-          {achieve.image && (
-            <Fragment>
+      <motion.div
+        layout
+        className={`expand-div ${
+          expand ? "h-full min-h-[200px] md:min-h-[500px] mt-2 md:mt-10" : "h-0"
+        }`}
+      >
+        <motion.p layout className={`${light ? "!text-black" : ""}`}>
+          {achieve.desc}
+        </motion.p>
+        {achieve.image && (
+          <Fragment>
+            <Image
+              src={achieve.image}
+              alt={"atefeh hasani - " + achieve.title}
+              placeholder="blur"
+              blurDataURL={`data:image/svg+xml;base64,${toBase64(
+                shimmer(700, 475)
+              )}`}
+              width={achieve.width}
+              height={achieve.height}
+            />
+            {achieve.image2 && (
               <Image
-                src={achieve.image}
-                alt={"atefeh hasani - " + achieve.title}
+                src={achieve.image2}
+                alt=""
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(
                   shimmer(700, 475)
                 )}`}
-                width={achieve.width}
-                height={achieve.height}
+                width={achieve.width2}
+                height={achieve.height2}
               />
-              {achieve.image2 && (
-                <Image
-                  src={achieve.image2}
-                  alt=""
-                  placeholder="blur"
-                  blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                    shimmer(700, 475)
-                  )}`}
-                  width={achieve.width2}
-                  height={achieve.height2}
-                />
-              )}
-            </Fragment>
-          )}
-          {achieve.video && (
-            <video controls width="700" preload="none" poster={achieve.poster}>
-              <source src={achieve.video} type="video/mp4" />
-              Your browser doesn't suport video!
-            </video>
-          )}
-        </motion.div>
-      )}
-      <span className={`${light ? "!bg-black" : ""}`}></span>
+            )}
+          </Fragment>
+        )}
+        {achieve.video && (
+          <video controls width="700" preload="none" poster={achieve.poster}>
+            <source src={achieve.video} type="video/mp4" />
+            Your browser doesn't suport video!
+          </video>
+        )}
+      </motion.div>
+      <motion.span
+        layout
+        className={`${light ? "!bg-black" : ""}`}
+      ></motion.span>
     </motion.li>
   );
 };

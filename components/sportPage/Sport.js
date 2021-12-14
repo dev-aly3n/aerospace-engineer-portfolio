@@ -186,7 +186,7 @@ const Sport = () => {
         <h2 ref={achieveRef}>My Achievements and Championships</h2>
         <motion.div variants={lineAnimation}></motion.div>
         <AnimateSharedLayout>
-          <motion.ul layout className="achieve-list-container">
+          <motion.ul className="achieve-list-container">
             {sportAchievementData[0] &&
               sportAchievementData.map((sportachieve, index) => {
                 return (

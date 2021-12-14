@@ -65,7 +65,7 @@ const Achievement = ({ achieve, light, num }) => {
             {achieve.image2 && (
               <Image
                 src={achieve.image2}
-                alt=""
+                alt={"atefeh hasani - " + achieve.title}
                 placeholder="blur"
                 blurDataURL={`data:image/svg+xml;base64,${toBase64(
                   shimmer(700, 475)

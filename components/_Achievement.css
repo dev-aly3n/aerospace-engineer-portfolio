@@ -10,9 +10,9 @@
         @apply text-[0.85rem] md:text-base mb-3 text-white;
       }
       > div {
-        @apply !self-center;
+        @apply self-center;
         > img {
-          @apply object-fill !mx-auto;
+          @apply object-fill mx-auto;
         }
       }
       > video {

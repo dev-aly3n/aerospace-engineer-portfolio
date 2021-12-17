@@ -12,11 +12,11 @@
       > div {
         @apply self-center;
         > img {
-          @apply object-fill;
+          @apply object-fill mx-auto;
         }
       }
       > video {
-        @apply block self-center w-[700px];
+        @apply block self-center w-[700px] mx-auto;
       }
     }
     > span:last-child {

@@ -95,7 +95,7 @@ const Home = () => {
           </div>
         </motion.div>
         <motion.span
-          layout
+          variants={photoAnimation}
           className="overflow-hidden h-full relative ssm:w-[400px] lg:w-[500px] xl:ml-[150px] z-10 rounded-bl-[100px] rounded-br-3xl "
         >
           <Image
@@ -127,7 +127,7 @@ const Home = () => {
       >
         <motion.div variants={rightToLeftAnimation}></motion.div>
         <motion.span
-          layout
+          variants={photoAnimation}
           className="overflow-hidden h-full relative ssm:w-[450px] lg:w-[450px] xl:ml-[150px]  z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
         >
           <Image
@@ -178,7 +178,7 @@ const Home = () => {
           </motion.p>
         </div>
         <motion.span
-          layout
+          variants={photoAnimation}
           className="overflow-hidden h-full relative ssm:w-[400px] md:w-[330px] lg:w-[550px] xl:ml-[150px] z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
         >
           <Image

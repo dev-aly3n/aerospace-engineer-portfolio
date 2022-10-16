@@ -24,6 +24,11 @@ import {
   lineAnimation,
 } from "../animation";
 
+import unifirstImg from "../../assets/uni/unifirst.png";
+import unisecondImg from "../../assets/uni/unisecond.png";
+import unithirdImg from "../../assets/uni/unithird.jpg";
+import Image from "next/image";
+
 const Home = () => {
   const [sec1, controls1] = useOnScrollAnimation(0.25);
   const [sec2, controls2] = useOnScrollAnimation();
@@ -89,11 +94,18 @@ const Home = () => {
             </motion.h3>
           </div>
         </motion.div>
-        <motion.img
-          variants={photoAnimation}
-          src="/media/uni/unifirst.png"
-          alt="atefeh hasani aerospace engineer"
-        />
+        <motion.span
+          layout
+          className="overflow-hidden h-full relative ssm:w-[400px] lg:w-[500px] xl:ml-[150px] z-10 rounded-bl-[100px] rounded-br-3xl "
+        >
+          <Image
+            src={unifirstImg}
+            alt={"atefeh hasani aerospace engineer"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
+
         <motion.button
           ref={secondRef}
           variants={buttonAnimation}
@@ -114,11 +126,17 @@ const Home = () => {
         ref={sec2}
       >
         <motion.div variants={rightToLeftAnimation}></motion.div>
-        <motion.img
-          variants={photoAnimation}
-          src="/media/uni/unisecond.png"
-          alt="atefeh hasani aerospace engineer"
-        />
+        <motion.span
+          layout
+          className="overflow-hidden h-full relative ssm:w-[450px] lg:w-[450px] xl:ml-[150px]  z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
+        >
+          <Image
+            src={unisecondImg}
+            alt={"atefeh hasani aerospace engineer"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
         <div className="text-and-title">
           <motion.p variants={textAnimation} style={{ lineHeight: 1.5 }}>
             I <span className="text-green-600">working</span> on UAV
@@ -159,11 +177,17 @@ const Home = () => {
             ect.
           </motion.p>
         </div>
-        <motion.img
-          variants={photoAnimation}
-          src="/media/uni/unithird.jpg"
-          alt="atefeh hasani aerospace engineer"
-        />
+        <motion.span
+          layout
+          className="overflow-hidden h-full relative ssm:w-[400px] md:w-[330px] lg:w-[550px] xl:ml-[150px] z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
+        >
+          <Image
+            src={unithirdImg}
+            alt={"atefeh hasani aerospace engineer"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
         <motion.button variants={buttonAnimation} onClick={learnMoreBtnHandler}>
           Learn more...{" "}
           <FontAwesomeIcon className="animate-bounce" icon={faArrowDown} />
@@ -181,8 +205,8 @@ const Home = () => {
       >
         <h2 ref={achieveRef}>My Achievements</h2>
         <motion.div variants={lineAnimation}></motion.div>
-          <motion.ul layout className="achieve-list-container">
-        <LayoutGroup>
+        <motion.ul layout className="achieve-list-container">
+          <LayoutGroup>
             {uniAchievementData[0] &&
               uniAchievementData.map((uniachieve, index) => {
                 return (
@@ -193,8 +217,8 @@ const Home = () => {
                   />
                 );
               })}
-        </LayoutGroup>
-          </motion.ul>
+          </LayoutGroup>
+        </motion.ul>
       </motion.div>
     </motion.div>
   );

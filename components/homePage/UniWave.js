@@ -18,7 +18,7 @@ const UniWave = ({ controls1 }) => {
         d="M3 62.0001C259 257 343 243 487 130C728.056 -59.1616 863 -1.99975 967 77.0001"
         stroke="#f277ea"
         strokeOpacity="0.5"
-        stroke-linecap="round"
+        strokeLinecap="round"
         fill="none"
       />
     </svg>

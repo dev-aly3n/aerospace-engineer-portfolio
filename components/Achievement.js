@@ -50,12 +50,12 @@ const Achievement = ({ achieve, light, num }) => {
           initial="hidden"
           animate="visable"
         >
-          <motion.p layout className={`${light ? "!text-black" : ""}`}>
+          <motion.p  className={`${light ? "!text-black" : ""}`}>
             {achieve.desc}
           </motion.p>
           {achieve.image && (
             <>
-              <motion.div layout className="w-9/12 h-full relative mx-auto">
+              <motion.div  className="w-9/12 h-full relative mx-auto">
                 <Image
                   src={achieve.image}
                   alt={"atefeh hasani - " + achieve.title}
@@ -84,6 +84,7 @@ const Achievement = ({ achieve, light, num }) => {
         </motion.div>
       )}
       <motion.span
+      layout
         className={` will-change-transform ${light ? "!bg-black" : ""}`}
       ></motion.span>
     </motion.li>

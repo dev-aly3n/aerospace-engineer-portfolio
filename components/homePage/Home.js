@@ -5,7 +5,7 @@ import { useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Achievement from "../Achievement";
-import { AnimateSharedLayout, motion } from "framer-motion";
+import { AnimateSharedLayout, LayoutGroup, motion } from "framer-motion";
 import UniWave from "./UniWave";
 
 //helpers & data
@@ -181,8 +181,8 @@ const Home = () => {
       >
         <h2 ref={achieveRef}>My Achievements</h2>
         <motion.div variants={lineAnimation}></motion.div>
-        <AnimateSharedLayout>
           <motion.ul layout className="achieve-list-container">
+        <LayoutGroup>
             {uniAchievementData[0] &&
               uniAchievementData.map((uniachieve, index) => {
                 return (
@@ -193,8 +193,8 @@ const Home = () => {
                   />
                 );
               })}
+        </LayoutGroup>
           </motion.ul>
-        </AnimateSharedLayout>
       </motion.div>
     </motion.div>
   );

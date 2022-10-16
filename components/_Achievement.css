@@ -1,6 +1,6 @@
 @layer components {
   .achievement-container {
-    @apply flex flex-col justify-center items-start w-full;
+    @apply flex flex-col justify-start items-start w-full h-full relative;
     > h3 {
       @apply text-lg md:text-xl text-gray-200 font-bold w-full hover:text-blue-200 cursor-pointer;
     }
@@ -9,23 +9,17 @@
       > p {
         @apply text-[0.85rem] md:text-base mb-3 text-white;
       }
-      > div {
-        @apply self-center;
-        > img {
-          @apply object-fill mx-auto;
-        }
-      }
       > video {
         @apply block self-center w-[700px] mx-auto;
       }
     }
     > span:last-child {
-      @apply w-full h-0.5 mt-2 bg-white;
+      @apply w-full !h-0.5 mt-2 bg-white;
     }
   }
 
   .achievement {
-    @apply w-full flex flex-col justify-center items-center mt-32 relative z-50;
+    @apply w-full flex flex-col justify-start items-center mt-32 relative z-50;
     > h2 {
       @apply text-3xl text-white text-center;
     }

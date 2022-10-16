@@ -317,3 +317,17 @@ export const sportwaveAnimation = {
     transition: { duration: 30, delay: 0, ease: [0.12, 0.35, 0.9, 1.05] },
   },
 };
+
+
+export const achievementExpandAni = {
+  hidden:{
+    opacity:0,
+  },
+  visable:{
+    opacity:1,
+    transition:{
+      duration:1,
+      delay:0.2
+    }
+  }
+}

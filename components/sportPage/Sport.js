@@ -28,6 +28,13 @@ import {
   borderAnimation,
 } from "../animation";
 
+import Image from "next/image";
+
+import sportfirst2 from "../../assets/sport/sportfirst2.png";
+import sportfirst from "../../assets/sport/sportfirst.png";
+import sportsecond from "../../assets/sport/sportsecond.png";
+import sportthird from "../../assets/sport/sportthird.jpg";
+
 const Sport = () => {
   const [sec1, controls1] = useOnScrollAnimation(0.3);
   const [sec2, controls2] = useOnScrollAnimation();
@@ -63,11 +70,17 @@ const Sport = () => {
       >
         <motion.div variants={rightToLeftAnimation}></motion.div>
         <div>
-          <motion.img
+          <motion.span
             variants={sportImgAnimation}
-            src="/media/sport/sportfirst2.png"
-            alt="atefeh hasani taekwondo athlete"
-          />
+            className="overflow-hidden relative h-[300px] w-[246px] z-10 hidden md:block"
+          >
+            <Image
+              src={sportfirst2}
+              alt={"atefeh hasani taekwondo athlete"}
+              placeholder="blur"
+              layout="responsive"
+            />
+          </motion.span>
           <p>
             <motion.span variants={twAnimation} custom={0}>
               T
@@ -98,11 +111,17 @@ const Sport = () => {
             </motion.span>
           </p>
         </div>
-        <motion.img
+        <motion.span
           variants={sportPhotoAnimation}
-          src="/media/sport/sportfirst.png"
-          alt="atefeh hasani taekwondo athlete"
-        />
+          className="overflow-hidden relative h-[600px] z-10 w-[229px]"
+        >
+          <Image
+            src={sportfirst}
+            alt={"atefeh hasani taekwondo athlete"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
       </motion.div>
       {/* second */}
       {/* second */}
@@ -126,11 +145,17 @@ const Sport = () => {
             continue.
           </motion.p>
         </div>
-        <motion.img
+        <motion.span
           variants={borderAnimation}
-          src="/media/sport/sportsecond.png"
-          alt="atefeh hasani taekwondo athlete"
-        />
+          className="overflow-hidden relative ssm:h-[500px] w-[382px] z-10 border-r-8 border-t-4 border-[#fccec1] rounded-3xl mt-7"
+        >
+          <Image
+            src={sportsecond}
+            alt={"atefeh hasani taekwondo athlete"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
       </motion.div>
 
       {/* third */}
@@ -167,11 +192,18 @@ const Sport = () => {
             </span>
           </motion.p>
         </div>
-        <motion.img
+        <motion.span
           variants={photoAnimation}
-          src="/media/sport/sportthird.jpg"
-          alt="atefeh hasani taekwondo athlete"
-        />
+          style={{ borderRadius: "0.5rem 1.5rem 8rem 0.9rem" }}
+          className="overflow-hidden relative ssm:h-[330px] lg:h-[400px] w-[534px] z-10 shadow-2xl mt-8"
+        >
+          <Image
+            src={sportthird}
+            alt={"atefeh hasani taekwondo athlete"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
       </motion.div>
 
       {/* achievement */}

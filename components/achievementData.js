@@ -210,15 +210,27 @@ export const sportAchievementData = [
   },
 ];
 
+
+
+import artachieve1 from "../../assets/art/artachieve1.jpg";
+import artachieve1_2 from "../../assets/art/artachieve1_2.jpg";
+import artachieve2 from "../../assets/art/artachieve2.jpg";
+import artachieve3 from "../../assets/art/artachieve3.jpg";
+import artachieve3_2 from "../../assets/art/artachieve3_2.jpg";
+import artachieve4 from "../../assets/art/artachieve4.jpg";
+import artachieve4_2 from "../../assets/art/artachieve4_2.jpg";
+import artachieve5 from "../../assets/art/artachieve5.jpg";
+import artachieve5_2 from "../../assets/art/artachieve5_2.jpg";
+
 export const artAchievementData = [
   {
     id: "001",
     width: 1400,
     height: 1000,
-    image: "/assets/art/artachieve1.jpg",
+    image: artachieve1,
     width2: 500,
     height2: 700,
-    image2: "/assets/art/artachieve1_2.jpg",
+    image2: artachieve1_2,
     title: "Daf festival of Seraj Library [2020]",
     desc: "This is an art certificate for a Turkish festival of Daf at Seraj Library at Tehran which I have participated ",
   },
@@ -226,7 +238,7 @@ export const artAchievementData = [
     id: "002",
     width: 1400,
     height: 800,
-    image: "/assets/art/artachieve2.jpg",
+    image: artachieve2,
     title: "Nowruz of 1399 (new year of Iranian culture) [2020]",
     desc: "Every year, at Nowruz, my mother and me playing Daf for welcoming the new year and Spring",
   },
@@ -234,10 +246,10 @@ export const artAchievementData = [
     id: "003",
     width: 1400,
     height: 800,
-    image: "/assets/art/artachieve3.jpg",
+    image: artachieve3,
     width2: 500,
     height2: 700,
-    image2: "/assets/art/artachieve3_2.jpg",
+    image2: artachieve3_2,
     title: "Daf festival of Ferdos cultural center at Tehran [2019]",
     desc: "These are our pictures before we go to stage. This festival was held in Ferdos cultural center at Summer.",
   },
@@ -245,10 +257,10 @@ export const artAchievementData = [
     id: "004",
     width: 1400,
     height: 700,
-    image: "/assets/art/artachieve4.jpg",
+    image: artachieve4,
     width2: 1000,
     height2: 700,
-    image2: "/assets/art/artachieve4_2.jpg",
+    image2: artachieve4_2,
     title: "Daf festival of International Exhibition [2019]",
     desc: "Just before we go to stage. This festival was held in International Exhibition at Winter.",
   },
@@ -256,10 +268,10 @@ export const artAchievementData = [
     id: "005",
     width: 1400,
     height: 800,
-    image: "/assets/art/artachieve5.jpg",
+    image: artachieve5,
     width2: 1100,
     height2: 700,
-    image2: "/assets/art/artachieve5_2.jpg",
+    image2: artachieve5_2,
     title:
       "Daf Festival at Tehran Pardis Theater in Khavaran Cultural Center [2019]",
     desc: "This festival has been held to respect of a grand Turk musician at winter. My mother, my auntie and me have participated in it.",

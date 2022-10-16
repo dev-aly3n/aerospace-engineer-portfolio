@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Main = (props) => {
   const router = useRouter();
   return (
-    <AnimatePresence exitBeforeEnter>
+    <AnimatePresence mode="wait">
       <motion.main
         className="main-container"
         key={router.pathname}

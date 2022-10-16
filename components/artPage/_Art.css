@@ -49,7 +49,7 @@
           }
         }
         > div:last-child {
-          @apply w-full ssm:w-[400px] mt-7 md:mt-0 rounded-md overflow-hidden ssm:hover:translate-x-3 duration-1500 shadow-neu1;
+          @apply w-full ssm:w-[400px] mt-7 md:mt-0 rounded-md overflow-hidden ssm:hover:translate-x-3 duration-1500 shadow-2xl;
           > span>span>img {
             @apply w-full hover:scale-105 hover:rotate-2 duration-1500;
           }

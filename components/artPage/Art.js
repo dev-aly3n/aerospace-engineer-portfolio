@@ -28,7 +28,6 @@ import {
 
 import artsecondImg from "../../assets/art/artsecond.jpg";
 import artthirdImg from "../../assets/art/artthird.png";
-import artfirstImg from "../../assets/art/artfirst.jpg";
 import Image from "next/image";
 
 const Art = () => {

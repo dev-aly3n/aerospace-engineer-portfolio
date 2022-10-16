@@ -16,9 +16,6 @@
         text-4xl sm:text-5xl md:text-7xl font-black relative !transform hover:scale-110 duration-1000;
         > div {
           @apply absolute flex gap-x-7 justify-evenly w-screen top-6 ssm:top-10 sm:top-20 md:top-32 lg:top-44 xl:top-64;
-          > img {
-            @apply h-8;
-          }
         }
       }
       > div:last-child {

@@ -13,6 +13,9 @@ import {
   bioTextAnimation,
 } from "../animation";
 
+import lifefirstImg from "../../assets/life/lifefirst.jpg"
+import Image from "next/image";
+
 const Biography = () => {
   const [sec1, controls1] = useOnScrollAnimation(0.7);
   const [sec2, controls2] = useOnScrollAnimation(0.7);
@@ -32,11 +35,17 @@ const Biography = () => {
       {/* first */}
       {/* first */}
       <div>
-        <motion.img
+      <motion.span
           variants={bioPhotoAnimation}
-          src="/media/life/lifefirst.jpg"
-          alt="atefeh hasani"
-        />
+          className="overflow-hidden h-full relative min-h-screen lg:h-full object-cover object-midleft lg:object-center duration-2000"
+        >
+          <Image
+            src={lifefirstImg}
+            alt={"atefeh hasani"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
         <div></div>
         <div>
           <span>My</span> <span>Dream</span> <span>IS</span>

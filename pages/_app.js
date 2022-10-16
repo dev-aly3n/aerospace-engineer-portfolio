@@ -6,6 +6,7 @@ import "../styles/tailwind.css";
 import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
+import { LayoutGroup } from "framer-motion";
 
 fontawesomeConfig.autoAddCss = false;
 
@@ -17,17 +18,14 @@ function MyApp({ Component, pageProps }) {
           name="google-site-verification"
           content="5z3DtPrg7_UbLzmf1_uk1gn-RAY7NRuzf6Z0G9m4KSk"
         />
-        <link rel="preload" as="image" href="/media/uni/unifirst.png" />
-        <link rel="preload" as="image" href="/media/art/artfirst.jpg" />
-        <link rel="preload" as="image" href="/media/sport/sportfirst.png" />
-        <link rel="preload" as="image" href="/media/sport/sportfirst2.png" />
-        <link rel="preload" as="image" href="/media/life/lifefirst.jpg" />
       </Head>
+      <LayoutGroup>
       <Header />
       <Main>
         <Component {...pageProps} />
       </Main>
       <Footer />
+      </LayoutGroup>
     </Fragment>
   );
 }

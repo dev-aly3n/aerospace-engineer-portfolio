@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
@@ -23,7 +24,7 @@ const headerLinks = [
 const Header = () => {
   const router = useRouter();
   return (
-    <div className="header-container">
+    <motion.div layout className="header-container">
       <h1>
         <Link href="/">Atefeh Hasani</Link>
       </h1>
@@ -46,7 +47,7 @@ const Header = () => {
           );
         })}
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

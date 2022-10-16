@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 const Footer = () => {
@@ -12,8 +13,9 @@ const Footer = () => {
       setFooterState(false);
     }
   }, [router.pathname]);
+  
   return (
-    <div className="footer-container">
+    <motion.div layout className="footer-container">
     <div>
       <svg
         id="wave"
@@ -94,7 +96,7 @@ const Footer = () => {
         <span></span>
         <span>All right reserved © <a target="_blank" href="https://github.com/dev-aly3n/aerospace-engineer-portfolio">dev-aly3n</a> 2021</span>
       </p>
-    </div>
+    </motion.div>
   );
 };
 

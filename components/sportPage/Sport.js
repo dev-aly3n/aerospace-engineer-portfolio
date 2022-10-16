@@ -187,7 +187,7 @@ const Sport = () => {
         <motion.div variants={lineAnimation}></motion.div>
         <AnimateSharedLayout>
           <motion.ul className="achieve-list-container">
-            {sportAchievementData[0] &&
+            {/* {sportAchievementData[0] &&
               sportAchievementData.map((sportachieve, index) => {
                 return (
                   <Achievement
@@ -196,7 +196,7 @@ const Sport = () => {
                     achieve={sportachieve}
                   />
                 );
-              })}
+              })} */}
           </motion.ul>
         </AnimateSharedLayout>
       </motion.div>

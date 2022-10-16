@@ -55,27 +55,23 @@ const Achievement = ({ achieve, light, num }) => {
           </motion.p>
           {achieve.image && (
             <>
-              <Image
-                src={achieve.image}
-                alt={"atefeh hasani - " + achieve.title}
-                placeholder="blur"
-                blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                  shimmer(700, 475)
-                )}`}
-                width={achieve.width}
-                height={achieve.height}
-              />
+              <motion.div layout className="w-9/12 h-full relative mx-auto">
+                <Image
+                  src={achieve.image}
+                  alt={"atefeh hasani - " + achieve.title}
+                  placeholder="blur"
+                  layout="responsive"
+                />
+              </motion.div>
               {achieve.image2 && (
+                <motion.div layout className="w-9/12 h-full relative mx-auto">
                 <Image
                   src={achieve.image2}
                   alt={"atefeh hasani - " + achieve.title}
                   placeholder="blur"
-                  blurDataURL={`data:image/svg+xml;base64,${toBase64(
-                    shimmer(700, 475)
-                  )}`}
-                  width={achieve.width2}
-                  height={achieve.height2}
+                  layout="responsive"
                 />
+                </motion.div>
               )}
             </>
           )}

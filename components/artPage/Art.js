@@ -26,6 +26,11 @@ import {
   sectionAnimation2,
 } from "../animation";
 
+import artsecondImg from "../../assets/art/artsecond.jpg";
+import artthirdImg from "../../assets/art/artthird.png";
+import artfirstImg from "../../assets/art/artfirst.jpg";
+import Image from "next/image";
+
 const Art = () => {
   const [sec1, controls1] = useOnScrollAnimation();
   const [sec2, controls2] = useOnScrollAnimation();
@@ -36,7 +41,7 @@ const Art = () => {
   const [isLoadingVideo, setIsLoadingVideo] = useState(false);
   const achieveRef = useRef(null);
 
-  // create an array to map 
+  // create an array to map
   const musicNotes = [...Array(15).keys()];
 
   const firstVideoClickHandler = () => {
@@ -165,12 +170,19 @@ const Art = () => {
               <motion.p variants={textAnimation}>
                 <FontAwesomeIcon icon={faMusic} /> Playing Daf is a hobby for me
                 for filling my time by beauty of music. It's about 4 years that
-                I play Daf. I am training once a week and have participated in many
-                festivals.
+                I play Daf. I am training once a week and have participated in
+                many festivals.
               </motion.p>
             </div>
             <motion.div variants={photoAnimation}>
-              <img src="media/art/artsecond.jpg" alt="atefeh hasani daf player" />
+              <motion.span className="overflow-hidden h-full relative w-full">
+                <Image
+                  src={artsecondImg}
+                  alt={"atefeh hasani daf player"}
+                  placeholder="blur"
+                  layout="responsive"
+                />
+              </motion.span>
             </motion.div>
           </div>
         </motion.div>
@@ -185,11 +197,17 @@ const Art = () => {
           initial="hidden"
         >
           <div>
-            <motion.img
-              variants={photoAnimation}
-              src="media/art/artthird.png"
-              alt="atefeh hasani daf player"
-            />
+          <motion.span
+          layout
+          className="overflow-hidden h-full relative"
+        >
+          <Image
+            src={artthirdImg}
+            alt={"atefeh hasani aerospace engineer"}
+            placeholder="blur"
+            layout="responsive"
+          />
+        </motion.span>
           </div>
           <div>
             <div ref={achieveRef} className="achievement ">
@@ -200,7 +218,7 @@ const Art = () => {
               ></motion.div>
               <AnimateSharedLayout>
                 <motion.ul layout className="achieve-list-container !w-full ">
-                  {/* {artAchievementData[0] &&
+                  {artAchievementData[0] &&
                     artAchievementData.map((artachieve, index) => {
                       return (
                         <Achievement
@@ -210,7 +228,7 @@ const Art = () => {
                           achieve={artachieve}
                         />
                       );
-                    })} */}
+                    })}
                 </motion.ul>
               </AnimateSharedLayout>
             </div>

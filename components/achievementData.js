@@ -212,15 +212,15 @@ export const sportAchievementData = [
 
 
 
-import artachieve1 from "../../assets/art/artachieve1.jpg";
-import artachieve1_2 from "../../assets/art/artachieve1_2.jpg";
-import artachieve2 from "../../assets/art/artachieve2.jpg";
-import artachieve3 from "../../assets/art/artachieve3.jpg";
-import artachieve3_2 from "../../assets/art/artachieve3_2.jpg";
-import artachieve4 from "../../assets/art/artachieve4.jpg";
-import artachieve4_2 from "../../assets/art/artachieve4_2.jpg";
-import artachieve5 from "../../assets/art/artachieve5.jpg";
-import artachieve5_2 from "../../assets/art/artachieve5_2.jpg";
+import artachieve1 from "../assets/art/artachieve1.jpg";
+import artachieve1_2 from "../assets/art/artachieve1_2.jpg";
+import artachieve2 from "../assets/art/artachieve2.jpg";
+import artachieve3 from "../assets/art/artachieve3.jpg";
+import artachieve3_2 from "../assets/art/artachieve3_2.jpg";
+import artachieve4 from "../assets/art/artachieve4.jpg";
+import artachieve4_2 from "../assets/art/artachieve4_2.jpg";
+import artachieve5 from "../assets/art/artachieve5.jpg";
+import artachieve5_2 from "../assets/art/artachieve5_2.jpg";
 
 export const artAchievementData = [
   {

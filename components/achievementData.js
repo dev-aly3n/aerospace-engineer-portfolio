@@ -50,12 +50,36 @@ export const uniAchievementData = [
   },
 ];
 
+
+
+import sportachieve0 from "../assets/sport/sportachieve0.jpg";
+import sportachieve1 from "../assets/sport/sportachieve1.jpg";
+import sportachieve2 from "../assets/sport/sportachieve2.jpg";
+import sportachieve2_2 from "../assets/sport/sportachieve2_2.jpg";
+import sportachieve3 from "../assets/sport/sportachieve3.jpg";
+import sportachieve4 from "../assets/sport/sportachieve4.jpg";
+import sportachieve5 from "../assets/sport/sportachieve5.jpg";
+import sportachieve6 from "../assets/sport/sportachieve6.jpg";
+import sportachieve6_2 from "../assets/sport/sportachieve6_2.jpg";
+import sportachieve8 from "../assets/sport/sportachieve8.jpg";
+import sportachieve9 from "../assets/sport/sportachieve9.jpg";
+import sportachieve9_2 from "../assets/sport/sportachieve9_2.jpg";
+import sportachieve10 from "../assets/sport/sportachieve10.jpg";
+import sportachieve12 from "../assets/sport/sportachieve12.jpg";
+import sportachieve12_2 from "../assets/sport/sportachieve12_2.jpg";
+import sportachieve13 from "../assets/sport/sportachieve13.jpg";
+import sportachieve15 from "../assets/sport/sportachieve15.jpg";
+import sportachieve16 from "../assets/sport/sportachieve16.jpg";
+import sportachieve17 from "../assets/sport/sportachieve17.jpg";
+
+
+
 export const sportAchievementData = [
   {
     id: "00",
     width: 1400,
     height: 900,
-    image: "/assets/sport/sportachieve0.jpg",
+    image: sportachieve0,
     title: "Participating in poomsae tutorial courses [2020]",
     desc: "I have participated in creating video of poomsae tecniques beside the grand master of Taekwondo Mr.Dastjerdi",
   },
@@ -63,7 +87,7 @@ export const sportAchievementData = [
     id: "000",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve1.jpg",
+    image: sportachieve1,
     title: "Dan 4 certificate [2020]",
     desc: "certificate for Taekwondo black belt Dan4",
   },
@@ -71,10 +95,10 @@ export const sportAchievementData = [
     id: "001",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve2.jpg",
+    image: sportachieve2,
     width2: 1000,
     height2: 600,
-    image2: "/assets/sport/sportachieve2_2.jpg",
+    image2: sportachieve2_2,
     title: "Southwest Poomsae Championship verdict [2019]",
     desc: "First place in the Southwest Poomsae Championship ",
   },
@@ -82,7 +106,7 @@ export const sportAchievementData = [
     id: "002",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve3.jpg",
+    image: sportachieve3,
     title: "Tehran Hanmadang league Championship verdict [2019]",
     desc: "Third place in the first Hanmadang Women's League of Tehran province in the standard poomsae section",
   },
@@ -90,7 +114,7 @@ export const sportAchievementData = [
     id: "003",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve4.jpg",
+    image: sportachieve4,
     title: "Dan 3 certificate [2017]",
     desc: " certificate for Taekwondo  black belt Dan3",
   },
@@ -98,7 +122,7 @@ export const sportAchievementData = [
     id: "004",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve5.jpg",
+    image: sportachieve5,
     title: "Freestyle poomsae competitions Championship verdict [2016]",
     desc: " First place in freestyle poomsae competitions",
   },
@@ -106,10 +130,10 @@ export const sportAchievementData = [
     id: "005",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve9.jpg",
+    image: sportachieve9,
     width2: 500,
     height2: 700,
-    image2: "/assets/sport/sportachieve9_2.jpg",
+    image2: sportachieve9_2,
     title: "Dan 2 certificate [2016]",
     desc: " International and National certificates for Taekwondo black belt Dan2 from Kukkiwon at Korea and Iran respectively",
   },
@@ -117,7 +141,7 @@ export const sportAchievementData = [
     id: "006",
     width: 1400,
     height: 900,
-    image: "/assets/sport/sportachieve8.jpg",
+    image: sportachieve8,
     title: "Women's Gyeorugi competition championship verdict [2015]",
     desc: " Second place in the women's Gyeorugi competition",
   },
@@ -125,10 +149,10 @@ export const sportAchievementData = [
     id: "007",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve6.jpg",
+    image: sportachieve6,
     width2: 500,
     height2: 700,
-    image2: "/assets/sport/sportachieve6_2.jpg",
+    image2: sportachieve6_2,
     title:
       "Hanmadang Nupi-Apchagi and Hanmadang individual Poomsae Championship verdict [2015]",
     desc: " Second place in the Hanmadang Nupi-Apchagi competition and Third place in the Hanmadang individual Poomsae competition",
@@ -137,7 +161,7 @@ export const sportAchievementData = [
     id: "008",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve10.jpg",
+    image: sportachieve10,
     title: "Gyeorugi Junior Freestyle competition championship verdict [2015]",
     desc: " Second place in the Gyeorugi Junior Freestyle Championship",
   },
@@ -145,10 +169,10 @@ export const sportAchievementData = [
     id: "009",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve12.jpg",
+    image: sportachieve12,
     width2: 500,
     height2: 700,
-    image2: "/assets/sport/sportachieve12_2.jpg",
+    image2: sportachieve12_2,
     title: "Dan 1 certificate [2015]",
     desc: " International and National certificates for Taekwondo black belt Dan1 from Kukkiwon at Korea and Iran respectively",
   },
@@ -156,7 +180,7 @@ export const sportAchievementData = [
     id: "010",
     width: 500,
     height: 700,
-    image: "/assets/sport/sportachieve13.jpg",
+    image: sportachieve13,
     title: "Cultural and sport festival championship verdict [2014]",
     desc: " Third place in cultural and sport festival",
   },
@@ -164,7 +188,7 @@ export const sportAchievementData = [
     id: "011",
     width: 1400,
     height: 900,
-    image: "/assets/sport/sportachieve15.jpg",
+    image: sportachieve15,
     title: "Victory Days Sport Festival championship verdict [2013]",
     desc: " Third place in the Victory Days Sport Festival",
   },
@@ -172,7 +196,7 @@ export const sportAchievementData = [
     id: "012",
     width: 1400,
     height: 900,
-    image: "/assets/sport/sportachieve16.jpg",
+    image: sportachieve16,
     title: "Gyeorugi championship verdict [2012]",
     desc: " Second place in the Gyeorugi competition",
   },
@@ -180,7 +204,7 @@ export const sportAchievementData = [
     id: "013",
     width: 500,
     height: 500,
-    image: "/assets/sport/sportachieve17.jpg",
+    image: sportachieve17,
     title: "swimmig competitions [2004]",
     desc: " These are two medals for two inter-club competitions which I have participated when I was 5 years old!",
   },

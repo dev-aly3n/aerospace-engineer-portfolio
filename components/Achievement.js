@@ -55,6 +55,7 @@ const Achievement = ({ achieve, light, num }) => {
           exit={"out"}
         >
           <motion.p
+          layout
             className={`text-[0.85rem] md:text-base mb-3 text-white ${
               light ? "!text-black" : ""
             }`}
@@ -63,7 +64,7 @@ const Achievement = ({ achieve, light, num }) => {
           </motion.p>
           {achieve.image && (
             <>
-              <motion.div className="w-9/12 h-full relative mx-auto">
+              <motion.div layout className="w-9/12 h-full relative mx-auto">
                 <Image
                   src={achieve.image}
                   alt={"atefeh hasani - " + achieve.title}
@@ -84,7 +85,8 @@ const Achievement = ({ achieve, light, num }) => {
             </>
           )}
           {achieve.video && (
-            <video
+            <motion.video
+            layout
               className="block self-center w-[700px] mx-auto"
               controls
               width="700"
@@ -93,14 +95,14 @@ const Achievement = ({ achieve, light, num }) => {
             >
               <source src={achieve.video} type="video/mp4" />
               Your browser doesn't suport video!
-            </video>
+            </motion.video>
           )}
         </motion.div>
       )}
       </AnimatePresence>
       <motion.span
         layout
-        className={` w-full !h-0.5 mt-2 bg-white ${
+        className={`will-change-transform w-full !h-px mt-2 bg-white ${
           light ? "!bg-black" : ""
         }`}
       ></motion.span>

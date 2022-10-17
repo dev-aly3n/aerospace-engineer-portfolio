@@ -205,7 +205,7 @@ const Home = () => {
       >
         <h2 ref={achieveRef}>My Achievements</h2>
         <motion.div variants={lineAnimation}></motion.div>
-        <motion.ul layout className="achieve-list-container">
+        <motion.ul className="achieve-list-container">
           <LayoutGroup>
             {uniAchievementData[0] &&
               uniAchievementData.map((uniachieve, index) => {

@@ -216,7 +216,7 @@ const Art = () => {
                 className="!bg-black"
               ></motion.div>
               <LayoutGroup>
-                <motion.ul layout className="achieve-list-container !w-full ">
+                <motion.ul className="achieve-list-container !w-full ">
                   {artAchievementData[0] &&
                     artAchievementData.map((artachieve, index) => {
                       return (

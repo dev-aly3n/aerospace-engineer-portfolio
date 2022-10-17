@@ -2,7 +2,7 @@
 import { useRef } from "react";
 
 //components
-import { AnimateSharedLayout, motion } from "framer-motion";
+import { AnimateSharedLayout, LayoutGroup, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Achievement from "../Achievement";
@@ -217,7 +217,7 @@ const Sport = () => {
       >
         <h2 ref={achieveRef}>My Achievements and Championships</h2>
         <motion.div variants={lineAnimation}></motion.div>
-        <AnimateSharedLayout>
+        <LayoutGroup>
           <motion.ul className="achieve-list-container">
             {sportAchievementData[0] &&
               sportAchievementData.map((sportachieve, index) => {
@@ -230,7 +230,7 @@ const Sport = () => {
                 );
               })}
           </motion.ul>
-        </AnimateSharedLayout>
+        </LayoutGroup>
       </motion.div>
     </motion.div>
   );

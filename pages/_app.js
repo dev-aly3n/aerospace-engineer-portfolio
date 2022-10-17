@@ -7,10 +7,13 @@ import { config as fontawesomeConfig } from "@fortawesome/fontawesome-svg-core";
 import "@fortawesome/fontawesome-svg-core/styles.css";
 import Head from "next/head";
 import { LayoutGroup } from "framer-motion";
+import { useRouter } from "next/router";
 
 fontawesomeConfig.autoAddCss = false;
 
 function MyApp({ Component, pageProps }) {
+  const router = useRouter();
+
   return (
     <Fragment>
       <Head>
@@ -20,11 +23,15 @@ function MyApp({ Component, pageProps }) {
         />
       </Head>
       <LayoutGroup>
+      <div className={`${router.pathname === "/art"? "bg-blue-50":"bg-black"}`}
+>
+
       <Header />
       <Main>
         <Component {...pageProps} />
       </Main>
       <Footer />
+      </div>
       </LayoutGroup>
     </Fragment>
   );

@@ -6,7 +6,7 @@ const Main = (props) => {
   return (
     <AnimatePresence mode="wait">
       <motion.main
-        className="main-container"
+        className={`main-container`}
         key={router.pathname}
       >
         {props.children}

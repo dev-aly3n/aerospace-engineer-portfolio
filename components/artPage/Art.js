@@ -5,7 +5,7 @@ import { Fragment, useRef, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Achievement from "../Achievement";
 import { faMusic, faPlayCircle } from "@fortawesome/free-solid-svg-icons";
-import { AnimateSharedLayout, motion } from "framer-motion";
+import { AnimateSharedLayout, LayoutGroup, motion } from "framer-motion";
 
 //helpers & data
 import { artAchievementData } from "../achievementData";
@@ -91,7 +91,7 @@ const Art = () => {
           variants={sectionAnimation}
         >
           <motion.div variants={leftToRightAnimation} className="peer">
-            <p> Daf is fun</p>
+            <p className="will-change-transform"> Daf is fun</p>
             <div>
               {musicNotes.map((note) => {
                 return <MusicNote key={note} note={note} showBtn={showBtn} />;
@@ -215,7 +215,7 @@ const Art = () => {
                 variants={lineAnimation}
                 className="!bg-black"
               ></motion.div>
-              <AnimateSharedLayout>
+              <LayoutGroup>
                 <motion.ul layout className="achieve-list-container !w-full ">
                   {artAchievementData[0] &&
                     artAchievementData.map((artachieve, index) => {
@@ -229,7 +229,7 @@ const Art = () => {
                       );
                     })}
                 </motion.ul>
-              </AnimateSharedLayout>
+              </LayoutGroup>
             </div>
           </div>
         </motion.div>

@@ -2,17 +2,6 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 const Footer = () => {
-  const router = useRouter();
-  const [footerState, setFooterState] = useState(false);
-
-  //the art page background is light blue, so we need to hide the black area of main background
-  useEffect(() => {
-    if (router.pathname === "/art") {
-      setFooterState(true);
-    } else {
-      setFooterState(false);
-    }
-  }, [router.pathname]);
   
   return (
     <motion.div layout className="footer-container">
@@ -23,7 +12,6 @@ const Footer = () => {
         viewBox="0 0 2560 470"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
-        className={`${footerState ? "-mt-44" : ""}`}
       >
         <defs>
           <linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0">

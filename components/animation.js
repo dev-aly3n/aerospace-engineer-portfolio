@@ -329,5 +329,11 @@ export const achievementExpandAni = {
       duration:1,
       delay:0.2
     }
+  },
+  out:{
+    opacity:0,
+    transition:{
+      duration:0.3,
+    }
   }
 }

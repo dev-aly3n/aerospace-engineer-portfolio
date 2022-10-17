@@ -2,7 +2,7 @@
 import { Fragment, useState } from "react";
 
 //components
-import { LayoutGroup, motion } from "framer-motion";
+import { AnimatePresence, LayoutGroup, motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Image from "next/image";
@@ -15,7 +15,6 @@ import { shimmer, toBase64 } from "./util";
 import { achieveAnimation, achievementExpandAni } from "./animation";
 
 const Achievement = ({ achieve, light, num }) => {
-  const [sec, controls] = useOnScrollAnimation(1);
   const [expand, setExpand] = useState(false);
   const descClickHandler = () => {
     setExpand(!expand);
@@ -24,14 +23,17 @@ const Achievement = ({ achieve, light, num }) => {
     <motion.li
       variants={achieveAnimation}
       initial="hidden"
-      ref={sec}
-      animate={controls}
+      animate="visable"
       layout
-      className={`achievement-container ${light ? "!text-black" : ""}`}
+      className={`flex flex-col justify-start items-start w-full h-full relative ${
+        light ? "!text-black" : ""
+      }`}
     >
       <motion.h3
         onClick={descClickHandler}
-        className={`${light ? "!text-black" : ""}`}
+        className={`text-lg md:text-xl text-gray-200 font-bold w-full hover:text-blue-200 cursor-pointer ${
+          light ? "!text-black" : ""
+        }`}
         layout
       >
         <FontAwesomeIcon
@@ -42,20 +44,26 @@ const Achievement = ({ achieve, light, num }) => {
         {". "}
         {achieve.title}
       </motion.h3>
+      <AnimatePresence mode="wait">
       {expand && (
         <motion.div
           layout
-          className={`expand-div h-full mt-2 md:mt-10`}
+          className={`flex flex-col justify-start items-start mx-auto sm:w-11/12 gap-y-8 overflow-hidden  mt-2 md:mt-10`}
           variants={achievementExpandAni}
           initial="hidden"
           animate="visable"
+          exit={"out"}
         >
-          <motion.p  className={`${light ? "!text-black" : ""}`}>
+          <motion.p
+            className={`text-[0.85rem] md:text-base mb-3 text-white ${
+              light ? "!text-black" : ""
+            }`}
+          >
             {achieve.desc}
           </motion.p>
           {achieve.image && (
             <>
-              <motion.div  className="w-9/12 h-full relative mx-auto">
+              <motion.div className="w-9/12 h-full relative mx-auto">
                 <Image
                   src={achieve.image}
                   alt={"atefeh hasani - " + achieve.title}
@@ -65,27 +73,36 @@ const Achievement = ({ achieve, light, num }) => {
               </motion.div>
               {achieve.image2 && (
                 <motion.div layout className="w-9/12 h-full relative mx-auto">
-                <Image
-                  src={achieve.image2}
-                  alt={"atefeh hasani - " + achieve.title}
-                  placeholder="blur"
-                  layout="responsive"
-                />
+                  <Image
+                    src={achieve.image2}
+                    alt={"atefeh hasani - " + achieve.title}
+                    placeholder="blur"
+                    layout="responsive"
+                  />
                 </motion.div>
               )}
             </>
           )}
           {achieve.video && (
-            <video controls width="700" preload="none" poster={achieve.poster}>
+            <video
+              className="block self-center w-[700px] mx-auto"
+              controls
+              width="700"
+              preload="none"
+              poster={achieve.poster}
+            >
               <source src={achieve.video} type="video/mp4" />
               Your browser doesn't suport video!
             </video>
           )}
         </motion.div>
       )}
+      </AnimatePresence>
       <motion.span
-      layout
-        className={` will-change-transform ${light ? "!bg-black" : ""}`}
+        layout
+        className={` w-full !h-0.5 mt-2 bg-white ${
+          light ? "!bg-black" : ""
+        }`}
       ></motion.span>
     </motion.li>
   );

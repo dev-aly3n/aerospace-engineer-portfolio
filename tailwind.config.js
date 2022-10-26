@@ -864,6 +864,7 @@ module.exports = {
       "right-bottom": "right bottom",
       "right-top": "right top",
       top: "top",
+      "mid-left": "27%",
     },
     opacity: {
       0: "0",

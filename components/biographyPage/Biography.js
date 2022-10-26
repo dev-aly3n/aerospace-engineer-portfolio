@@ -35,17 +35,11 @@ const Biography = () => {
       {/* first */}
       {/* first */}
       <div>
-      <motion.span
+      <motion.img
           variants={bioPhotoAnimation}
-          className="overflow-hidden h-full relative min-h-screen lg:h-full object-cover object-midleft lg:object-center duration-2000"
-        >
-          <Image
-            src={lifefirstImg}
-            alt={"atefeh hasani"}
-            placeholder="blur"
-            layout="responsive"
-          />
-        </motion.span>
+          src="/media/life/lifefirst.jpg"
+          className=" min-h-screen lg:h-full object-cover object-mid-left lg:object-center duration-2000"
+        />
         <div></div>
         <div>
           <span>My</span> <span>Dream</span> <span>IS</span>

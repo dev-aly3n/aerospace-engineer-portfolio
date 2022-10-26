@@ -96,7 +96,7 @@ const Home = () => {
         </motion.div>
         <motion.span
           variants={photoAnimation}
-          className="overflow-hidden h-full relative ssm:w-[400px] lg:w-[500px] xl:ml-[150px] z-10 rounded-bl-[100px] rounded-br-3xl "
+          className="overflow-hidden h-full relative w-full ssm:w-[400px] lg:w-[500px] xl:ml-[150px] z-10 rounded-bl-[100px] rounded-br-3xl "
         >
           <Image
             src={unifirstImg}
@@ -128,7 +128,7 @@ const Home = () => {
         <motion.div variants={rightToLeftAnimation}></motion.div>
         <motion.span
           variants={photoAnimation}
-          className="overflow-hidden h-full relative ssm:w-[450px] lg:w-[450px] xl:ml-[150px]  z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
+          className="overflow-hidden h-full relative w-full ssm:w-[450px] lg:w-[450px] xl:ml-[150px]  z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
         >
           <Image
             src={unisecondImg}
@@ -179,7 +179,7 @@ const Home = () => {
         </div>
         <motion.span
           variants={photoAnimation}
-          className="overflow-hidden h-full relative ssm:w-[400px] md:w-[330px] lg:w-[550px] xl:ml-[150px] z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
+          className="overflow-hidden h-full relative w-full ssm:w-[400px] md:w-[330px] lg:w-[550px] xl:ml-[150px] z-10 rounded-bl-[40px] rounded-br-3xl mt-5 md:mt-0"
         >
           <Image
             src={unithirdImg}
